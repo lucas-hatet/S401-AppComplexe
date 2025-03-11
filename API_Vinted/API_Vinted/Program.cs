@@ -1,8 +1,16 @@
+using API_Vinted.Models.EntityFramework;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddRazorPages();
+builder.Services.AddDbContext<VintedDBContext>(options =>
+  options.UseNpgsql(builder.Configuration.GetConnectionString("FilmRatingsDBContextRemote")));
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
