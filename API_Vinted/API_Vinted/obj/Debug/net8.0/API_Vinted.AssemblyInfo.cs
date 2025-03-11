@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_Vinted")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dffd4e2798f517e7aba5aefa8040baaa8fe66af8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d90bb732acafd72720732e0efa9fa6b74bbe4ce9")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_Vinted")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_Vinted")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
