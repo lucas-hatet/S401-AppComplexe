@@ -18,7 +18,7 @@ namespace API_Vinted.Models.EntityFramework
         public int IDVendeur { get; set; }
 
         [Column("numtransation")]  
-        public int NumTransaction { get; set; }
+        public int? NumTransaction { get; set; }
 
         [Required]
         [Column("idcategorie")]
@@ -94,5 +94,8 @@ namespace API_Vinted.Models.EntityFramework
 
         [InverseProperty(nameof(Favori.Article))]
         public virtual ICollection<Favori> Favoris { get; set; } = null!;
+
+        [InverseProperty(nameof(CouleurArticle.Article))]
+        public ICollection<CouleurArticle> CouleursArticle { get; set; } = null!;
     }
 }

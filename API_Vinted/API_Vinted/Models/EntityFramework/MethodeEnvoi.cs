@@ -12,11 +12,11 @@ namespace API_Vinted.Models.EntityFramework
 
         [Column("nommethodeenvoi")]
         [StringLength(50)]
-        public string NomMethodeEnvoi { get; set; } = null!;
+        public string? NomMethodeEnvoi { get; set; }
 
         [Column("descriptionmethodeenvoi")]
         [StringLength(200)]
-        public string DescriptionMethodeEnvoi { get; set; } = null!;
+        public string? DescriptionMethodeEnvoi { get; set; }
 
 
 

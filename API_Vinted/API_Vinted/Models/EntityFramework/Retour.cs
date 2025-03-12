@@ -11,7 +11,7 @@ namespace API_Vinted.Models.EntityFramework
         public int IDRetour { get; set; }
 
         [Column("idoption")]
-        public int IDOption { get; set; }
+        public int? IDOption { get; set; }
 
         [Required]
         [Column("datedernieredemande",TypeName = "Date")]
@@ -31,7 +31,7 @@ namespace API_Vinted.Models.EntityFramework
         public DateTime DateCreation { get; set; }
 
         [Column("Accepte")]
-        public bool Accepte { get; set; }
+        public bool? Accepte { get; set; }
 
         [Required]
         [Column("motifretour")]

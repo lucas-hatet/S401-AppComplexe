@@ -7,7 +7,7 @@ namespace API_Vinted.Models.EntityFramework
     public partial class Couleur
     {
         [InverseProperty(nameof(CouleurArticle.Couleur))]
-        public List<Couleur> CouleursArticle { get; set; } = null!;
+        public ICollection<CouleurArticle> CouleursArticle { get; set; } = null!;
 
 
         [Key]
@@ -17,11 +17,11 @@ namespace API_Vinted.Models.EntityFramework
         [Required]
         [Column("nomcouleur")]
         [StringLength(30)]
-        public string NomCouleur { get; set; }
+        public string NomCouleur { get; set; } = null!;
 
-        [Column("titulairecompte")]
+        [Column("codehexa")]
         [StringLength(7)]
-        public string CodeHexa { get; set; }
+        public string? CodeHexa { get; set; }
 
     }
 }

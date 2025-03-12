@@ -13,7 +13,7 @@ namespace API_Vinted.Models.EntityFramework
 
         [Required]
         [Column("idretour")]
-        public int IDRetour { get; set; }
+        public int? IDRetour { get; set; }
 
         [ForeignKey(nameof(IDRetour))]
         [InverseProperty(nameof(Retour.Photos))]

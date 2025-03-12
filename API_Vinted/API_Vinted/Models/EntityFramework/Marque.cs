@@ -12,7 +12,7 @@ namespace API_Vinted.Models.EntityFramework
         public int IDMarque { get; set; }
 
         [Column("nommarque")]
-        public string NomMarque { get; set; } = null!;
+        public string? NomMarque { get; set; }
 
         [InverseProperty(nameof(Article.Marque))]
         public ICollection<Article> Articles { get; set; } = null!;

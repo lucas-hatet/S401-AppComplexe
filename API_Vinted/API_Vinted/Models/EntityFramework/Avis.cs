@@ -18,14 +18,14 @@ namespace API_Vinted.Models.EntityFramework
         public int IDVendeur { get; set; }
 
         [Column("note", TypeName ="numeric(2,1)")]
-        public int Note{ get; set; }
+        public int? Note{ get; set; }
 
         [Column("description")]
         [StringLength(350)]
-        public string Description{ get; set; }
+        public string? Description{ get; set; }
 
         [Column("automatique")]
-        public bool Automatique { get; set; }
+        public bool? Automatique { get; set; }
 
         [ForeignKey(nameof(IDAcheteur))]
         [InverseProperty(nameof(Client.AvisMis))]

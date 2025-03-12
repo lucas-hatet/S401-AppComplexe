@@ -7,18 +7,22 @@ namespace API_Vinted.Models.EntityFramework
     public partial class Achat
     {
         [Key]
+        [Column("numtransaction")]
         public int NumTransaction { get; set; }
 
         [Required]
+        [Column("idoption")]
         public int IDOption { get; set; }
 
-        public int IDRetour { get; set; }
+        [Column("idretour")]
+        public int? IDRetour { get; set; }
 
         [Required]
+        [Column("idclient")]
         public int IDClient { get; set; }
 
         [Column("dateachat", TypeName = "Date")]
-        public DateTime DateAchat { get; set; }
+        public DateTime? DateAchat { get; set; }
 
 
         [ForeignKey(nameof(IDOption))]
@@ -30,7 +34,7 @@ namespace API_Vinted.Models.EntityFramework
         public virtual Retour Retours { get; set; } = null!;
 
         [InverseProperty(nameof(Article.Achat))]
-        public virtual Article Articles { get; set; } = null!;
+        public virtual ICollection<Article> Articles { get; set; } = null!;
 
     }
 }

@@ -38,53 +38,53 @@ namespace API_Vinted.Models.EntityFramework
         public int IDVille { get; set; }
 
         [Column("idlangue")]
-        public int IDLangue { get; set; }
+        public int? IDLangue { get; set; }
 
         [Required]
         [Column("idadresselivraison")]
         public int IDAdresseLivraison { get; set; }
 
         [Column("idadressefacturation")]
-        public int IDAdresseFacturation { get; set; }
+        public int? IDAdresseFacturation { get; set; }
 
         [Required]
         [Column("idsexe")]
         public int IDSexe { get; set; }
 
         [Column("idphoto")]
-        public int IDPhoto { get; set; }
+        public int? IDPhoto { get; set; }
 
         [Required]
         [Column("pseudo")]
-        [StringLength(30)]
+        [StringLength(100)]
         public string Pseudo { get; set; } = null!;
 
         [Required]
         [Column("mail")]
         [StringLength(50)]
-        public string Mail { get; set; }
+        public string Mail { get; set; } = null!;
 
         [Required]
         [Column("motdepasse")]
         [StringLength(100)]
-        public string MotDePasse { get; set; }
-        
+        public string MotDePasse { get; set; } = null!;
+
         [Required]
         [Column("telephone")]
         [StringLength(11)]
-        public string Telephone { get; set; }
+        public string Telephone { get; set; } = null!;
 
 
         [Column("description")]
-        [StringLength(300)]
-        public string Description { get; set; }
+        [StringLength(350)]
+        public string? Description { get; set; }
 
         [Column("nomcompteclient")]
-        [StringLength(50)]
-        public string NomCompteClient { get; set; }
+        [StringLength(300)]
+        public string? NomCompteClient { get; set; }
 
         [Column("datenaissance", TypeName = "Date")]
-        public DateTime DateNaissance { get; set; }
+        public DateTime? DateNaissance { get; set; }
 
         [Required]
         [Column("valeurportemonnaie", TypeName = "Numeric(18, 2)")]
@@ -94,14 +94,13 @@ namespace API_Vinted.Models.EntityFramework
         [Column("datederniereconnexion", TypeName = "Date")]
         public DateTime DateDerniereConnexion { get; set; }
 
-        [Required]
         [Column("numsiret")]
         [StringLength(300)]
-        public string NumSiret { get; set; }
+        public string? NumSiret { get; set; }
 
         [Column("raisonsociale")]
         [StringLength(100)]
-        public string RaisonSociale { get; set; }
+        public string? RaisonSociale { get; set; }
         
 
         [ForeignKey(nameof(IDVille))]

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("couleur")]
+    [Table("couleur_article")]
     [PrimaryKey("IDCouleur", "IDArticle")]
     public partial class CouleurArticle
     {
@@ -13,7 +13,6 @@ namespace API_Vinted.Models.EntityFramework
         public int IDCouleur { get; set; }
 
         [Key]
-        [Required]
         [Column("idarticle")]
         public int IDArticle { get; set; }
 
@@ -22,6 +21,10 @@ namespace API_Vinted.Models.EntityFramework
         [InverseProperty(nameof(Couleur.CouleursArticle))]
         public virtual Couleur Couleur { get; set; } = null!;
 
-        
+        [ForeignKey(nameof(IDArticle))]
+        [InverseProperty(nameof(Article.CouleursArticle))]
+        public virtual Article Article { get; set; } = null!;
+
+
     }
 }

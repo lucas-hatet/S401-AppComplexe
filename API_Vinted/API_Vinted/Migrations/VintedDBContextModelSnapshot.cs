@@ -27,24 +27,32 @@ namespace API_Vinted.Migrations
                 {
                     b.Property<int>("NumTransaction")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("numtransaction");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("NumTransaction"));
 
-                    b.Property<DateTime>("DateAchat")
+                    b.Property<DateTime?>("DateAchat")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("Date")
                         .HasColumnName("dateachat")
                         .HasDefaultValueSql("CURRENT_DATE");
 
                     b.Property<int>("IDClient")
-                        .HasColumnType("integer");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("idclient");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDClient"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDClient"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDOption")
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasColumnName("idoption");
 
-                    b.Property<int>("IDRetour")
-                        .HasColumnType("integer");
+                    b.Property<int?>("IDRetour")
+                        .HasColumnType("integer")
+                        .HasColumnName("idretour");
 
                     b.HasKey("NumTransaction");
 
@@ -63,9 +71,9 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idadresse");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDAdresse"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDAdresse"), 1L, null, null, null, null, null);
 
                     b.Property<string>("AdresseLigne2")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)")
                         .HasColumnName("adresseligne2");
@@ -101,6 +109,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idarticle");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDArticle"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDArticle"), 1L, null, null, null, null, null);
 
                     b.Property<DateTime>("DateAjout")
                         .ValueGeneratedOnAdd()
@@ -145,7 +154,7 @@ namespace API_Vinted.Migrations
                         .HasColumnType("character varying(50)")
                         .HasColumnName("nomarticle");
 
-                    b.Property<int>("NumTransaction")
+                    b.Property<int?>("NumTransaction")
                         .HasColumnType("integer")
                         .HasColumnName("numtransation");
 
@@ -155,8 +164,7 @@ namespace API_Vinted.Migrations
 
                     b.HasKey("IDArticle");
 
-                    b.HasIndex("IDCategorie")
-                        .IsUnique();
+                    b.HasIndex("IDCategorie");
 
                     b.HasIndex("IDFormat");
 
@@ -166,8 +174,7 @@ namespace API_Vinted.Migrations
 
                     b.HasIndex("IDVendeur");
 
-                    b.HasIndex("NumTransaction")
-                        .IsUnique();
+                    b.HasIndex("NumTransaction");
 
                     b.ToTable("article", "public");
                 });
@@ -175,26 +182,29 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Avis", b =>
                 {
                     b.Property<int>("IDAcheteur")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("idacheteur");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDAcheteur"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDAcheteur"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDVendeur")
                         .HasColumnType("integer")
                         .HasColumnName("idvendeur");
 
-                    b.Property<bool>("Automatique")
+                    b.Property<bool?>("Automatique")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("boolean")
                         .HasDefaultValue(false)
                         .HasColumnName("automatique");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(350)
                         .HasColumnType("character varying(350)")
                         .HasColumnName("description");
 
-                    b.Property<decimal>("Note")
+                    b.Property<decimal?>("Note")
                         .HasColumnType("numeric(2,1)")
                         .HasColumnName("note");
 
@@ -213,6 +223,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idcaracteristique");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDCaracteristique"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDCaracteristique"), 1L, null, null, null, null, null);
 
                     b.Property<string>("NomCaracteristique")
                         .IsRequired()
@@ -228,8 +239,12 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.CaracteristiqueArticle", b =>
                 {
                     b.Property<int>("IDArticle")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("idarticle");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDArticle"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDArticle"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDCaracteristique")
                         .HasColumnType("integer")
@@ -251,8 +266,12 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.CaracteristiqueCategorie", b =>
                 {
                     b.Property<int>("IDCategorie")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("idcategorie");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDCategorie"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDCategorie"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDCaracteristique")
                         .HasColumnType("integer")
@@ -273,6 +292,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idcarte");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDCarte"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDCarte"), 1L, null, null, null, null, null);
 
                     b.Property<string>("DateExpiration")
                         .IsRequired()
@@ -316,13 +336,13 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idcategorie");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDCategorie"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDCategorie"), 1L, null, null, null, null, null);
 
-                    b.Property<int>("IDCategorieParent")
+                    b.Property<int?>("IDCategorieParent")
                         .HasColumnType("integer")
                         .HasColumnName("idcategorieparent");
 
                     b.Property<string>("LibelleCategorie")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)")
                         .HasColumnName("libellecategorie");
@@ -342,22 +362,22 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idclient");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDClient"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDClient"), 1L, null, null, null, null, null);
 
                     b.Property<DateTime>("DateDerniereConnexion")
                         .HasColumnType("Date")
                         .HasColumnName("datederniereconnexion");
 
-                    b.Property<DateTime>("DateNaissance")
+                    b.Property<DateTime?>("DateNaissance")
                         .HasColumnType("Date")
                         .HasColumnName("datenaissance");
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("character varying(300)")
+                        .HasMaxLength(350)
+                        .HasColumnType("character varying(350)")
                         .HasColumnName("description");
 
-                    b.Property<int>("IDAdresseFacturation")
+                    b.Property<int?>("IDAdresseFacturation")
                         .HasColumnType("integer")
                         .HasColumnName("idadressefacturation");
 
@@ -365,11 +385,11 @@ namespace API_Vinted.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("idadresselivraison");
 
-                    b.Property<int>("IDLangue")
+                    b.Property<int?>("IDLangue")
                         .HasColumnType("integer")
                         .HasColumnName("idlangue");
 
-                    b.Property<int>("IDPhoto")
+                    b.Property<int?>("IDPhoto")
                         .HasColumnType("integer")
                         .HasColumnName("idphoto");
 
@@ -394,25 +414,22 @@ namespace API_Vinted.Migrations
                         .HasColumnName("motdepasse");
 
                     b.Property<string>("NomCompteClient")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
+                        .HasMaxLength(300)
+                        .HasColumnType("character varying(300)")
                         .HasColumnName("nomcompteclient");
 
                     b.Property<string>("NumSiret")
-                        .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("character varying(300)")
                         .HasColumnName("numsiret");
 
                     b.Property<string>("Pseudo")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("character varying(30)")
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)")
                         .HasColumnName("pseudo");
 
                     b.Property<string>("RaisonSociale")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)")
                         .HasColumnName("raisonsociale");
@@ -429,11 +446,9 @@ namespace API_Vinted.Migrations
 
                     b.HasKey("IDClient");
 
-                    b.HasIndex("IDAdresseFacturation")
-                        .IsUnique();
+                    b.HasIndex("IDAdresseFacturation");
 
-                    b.HasIndex("IDAdresseLivraison")
-                        .IsUnique();
+                    b.HasIndex("IDAdresseLivraison");
 
                     b.HasIndex("IDLangue");
 
@@ -455,7 +470,7 @@ namespace API_Vinted.Migrations
 
                     b.HasKey("CP");
 
-                    b.ToTable("codepostal", "public");
+                    b.ToTable("code_postal", "public");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.CompteBancaire", b =>
@@ -466,6 +481,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idcompte");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDCompte"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDCompte"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDClient")
                         .HasColumnType("integer")
@@ -473,28 +489,79 @@ namespace API_Vinted.Migrations
 
                     b.Property<string>("Iban")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
+                        .HasMaxLength(300)
+                        .HasColumnType("character varying(300)")
                         .HasColumnName("iban");
 
                     b.Property<string>("TitulaireCompte")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
+                        .HasMaxLength(300)
+                        .HasColumnType("character varying(300)")
                         .HasColumnName("titulairecompte");
 
                     b.HasKey("IDCompte");
 
                     b.HasIndex("IDClient");
 
-                    b.ToTable("comptebancaire", "public");
+                    b.ToTable("compte_bancaire", "public");
+                });
+
+            modelBuilder.Entity("API_Vinted.Models.EntityFramework.Couleur", b =>
+                {
+                    b.Property<int>("IDCouleur")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("idcouleur");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDCouleur"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDCouleur"), 1L, null, null, null, null, null);
+
+                    b.Property<string>("CodeHexa")
+                        .HasMaxLength(7)
+                        .HasColumnType("character varying(7)")
+                        .HasColumnName("codehexa");
+
+                    b.Property<string>("NomCouleur")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)")
+                        .HasColumnName("nomcouleur");
+
+                    b.HasKey("IDCouleur");
+
+                    b.ToTable("couleur", "public");
+                });
+
+            modelBuilder.Entity("API_Vinted.Models.EntityFramework.CouleurArticle", b =>
+                {
+                    b.Property<int>("IDCouleur")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("idcouleur");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDCouleur"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDCouleur"), 1L, null, null, null, null, null);
+
+                    b.Property<int>("IDArticle")
+                        .HasColumnType("integer")
+                        .HasColumnName("idarticle");
+
+                    b.HasKey("IDCouleur", "IDArticle");
+
+                    b.HasIndex("IDArticle");
+
+                    b.ToTable("couleur_article", "public");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.EnvoiRelais", b =>
                 {
                     b.Property<int>("IDClient")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("idclient");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDClient"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDClient"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDMethodeEnvoi")
                         .HasColumnType("integer")
@@ -510,7 +577,7 @@ namespace API_Vinted.Migrations
 
                     b.HasIndex("IDRelais");
 
-                    b.ToTable("envoirelais", "public");
+                    b.ToTable("envoi_relais", "public");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Etat", b =>
@@ -521,9 +588,11 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idetat");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDEtat"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDEtat"), 1L, null, null, null, null, null);
 
-                    b.Property<int>("LibelleEtat")
-                        .HasColumnType("integer")
+                    b.Property<string>("LibelleEtat")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("libelleetat");
 
                     b.HasKey("IDEtat");
@@ -533,17 +602,21 @@ namespace API_Vinted.Migrations
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.EtatArticle", b =>
                 {
+                    b.Property<int>("IDArticle")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("idarticle");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDArticle"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDArticle"), 1L, null, null, null, null, null);
+
                     b.Property<int>("IDEtat")
                         .HasColumnType("integer")
                         .HasColumnName("idetat");
 
-                    b.Property<int>("IDArticle")
-                        .HasColumnType("integer")
-                        .HasColumnName("idarticle");
+                    b.HasKey("IDArticle", "IDEtat");
 
-                    b.HasKey("IDEtat");
-
-                    b.HasIndex("IDArticle");
+                    b.HasIndex("IDEtat");
 
                     b.ToTable("etat_article", "public");
                 });
@@ -551,8 +624,12 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Favori", b =>
                 {
                     b.Property<int>("IDClient")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("idclient");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDClient"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDClient"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDArticle")
                         .HasColumnType("integer")
@@ -573,26 +650,25 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idformat");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDFormat"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDFormat"), 1L, null, null, null, null, null);
 
                     b.Property<string>("DescriptonFormat")
-                        .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("character varying(300)")
                         .HasColumnName("descriptionformat");
 
-                    b.Property<float>("FraisDePort")
+                    b.Property<float?>("FraisDePort")
                         .HasColumnType("real")
-                        .HasColumnName("fraisport");
+                        .HasColumnName("fraisdeport");
 
                     b.Property<string>("LibelleFormat")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)")
                         .HasColumnName("libelleformat");
 
                     b.HasKey("IDFormat");
 
-                    b.ToTable("formatcolis", "public");
+                    b.ToTable("format_colis", "public");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Langue", b =>
@@ -603,6 +679,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("IDLangue");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDLangue"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDLangue"), 1L, null, null, null, null, null);
 
                     b.Property<string>("Libellelangue")
                         .IsRequired()
@@ -623,9 +700,9 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idmarque");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDMarque"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDMarque"), 1L, null, null, null, null, null);
 
                     b.Property<string>("NomMarque")
-                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("nommarque");
 
@@ -637,8 +714,12 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Message", b =>
                 {
                     b.Property<int>("IDExpediteur")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("idexpediteur");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDExpediteur"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDExpediteur"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDDestinataire")
                         .HasColumnType("integer")
@@ -656,7 +737,7 @@ namespace API_Vinted.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("datemessage");
 
-                    b.Property<double>("PrixOffre")
+                    b.Property<double?>("PrixOffre")
                         .HasColumnType("double precision")
                         .HasColumnName("prixoffre");
 
@@ -677,15 +758,14 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idmethodeenvoi");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDMethodeEnvoi"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDMethodeEnvoi"), 1L, null, null, null, null, null);
 
                     b.Property<string>("DescriptionMethodeEnvoi")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("character varying(200)")
                         .HasColumnName("descriptionmethodeenvoi");
 
                     b.Property<string>("NomMethodeEnvoi")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)")
                         .HasColumnName("nommethodeenvoi");
@@ -703,6 +783,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idmodepaiement");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDModePaiement"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDModePaiement"), 1L, null, null, null, null, null);
 
                     b.Property<string>("LibelleModePaiement")
                         .IsRequired()
@@ -723,19 +804,18 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idoption");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDOption"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDOption"), 1L, null, null, null, null, null);
 
                     b.Property<string>("DescriptionOption")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("character varying(200)")
-                        .HasColumnName("nomoption");
+                        .HasColumnName("descriptionoption");
 
-                    b.Property<double>("Frais")
+                    b.Property<double?>("Frais")
                         .HasColumnType("numeric(18,2)")
                         .HasColumnName("frais");
 
                     b.Property<string>("LibelleOption")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("character varying(50)")
                         .HasColumnName("libelleoption");
@@ -753,6 +833,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idpays");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDPays"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDPays"), 1L, null, null, null, null, null);
 
                     b.Property<string>("NomPays")
                         .IsRequired()
@@ -772,6 +853,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idphoto");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDPhoto"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDPhoto"), 1L, null, null, null, null, null);
 
                     b.Property<string>("URLPhoto")
                         .IsRequired()
@@ -791,6 +873,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idphoto");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDPhoto"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDPhoto"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDArticle")
                         .HasColumnType("integer")
@@ -811,8 +894,10 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idphoto");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDPhoto"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDPhoto"), 1L, null, null, null, null, null);
 
-                    b.Property<int>("IDRetour")
+                    b.Property<int?>("IDRetour")
+                        .IsRequired()
                         .HasColumnType("integer")
                         .HasColumnName("idretour");
 
@@ -831,6 +916,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idrelais");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDRelais"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDRelais"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDAdresse")
                         .HasColumnType("integer")
@@ -855,8 +941,9 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idretour");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDRetour"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDRetour"), 1L, null, null, null, null, null);
 
-                    b.Property<bool>("Accepte")
+                    b.Property<bool?>("Accepte")
                         .HasColumnType("boolean")
                         .HasColumnName("Accepte");
 
@@ -878,7 +965,7 @@ namespace API_Vinted.Migrations
                         .HasColumnType("boolean")
                         .HasColumnName("demandeexpert");
 
-                    b.Property<int>("IDOption")
+                    b.Property<int?>("IDOption")
                         .HasColumnType("integer")
                         .HasColumnName("idoption");
 
@@ -903,6 +990,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idsexe");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDSexe"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDSexe"), 1L, null, null, null, null, null);
 
                     b.Property<string>("LibelleSexe")
                         .IsRequired()
@@ -918,14 +1006,18 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Signalement", b =>
                 {
                     b.Property<int>("IDClient")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("idclient");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDClient"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDClient"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDArticle")
                         .HasColumnType("integer")
                         .HasColumnName("idarticle");
 
-                    b.Property<DateTime>("DateSignalement")
+                    b.Property<DateTime?>("DateSignalement")
                         .HasColumnType("Date")
                         .HasColumnName("datesignalement");
 
@@ -949,6 +1041,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idtypecarte");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDTypeCarte"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDTypeCarte"), 1L, null, null, null, null, null);
 
                     b.Property<string>("LibelleTypeCarte")
                         .IsRequired()
@@ -969,6 +1062,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idvaleur");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDValeur"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDValeur"), 1L, null, null, null, null, null);
 
                     b.Property<int>("IDCaracteristique")
                         .HasColumnType("integer")
@@ -995,6 +1089,7 @@ namespace API_Vinted.Migrations
                         .HasColumnName("idville");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDVille"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDVille"), 1L, null, null, null, null, null);
 
                     b.Property<string>("CP")
                         .IsRequired()
@@ -1030,9 +1125,7 @@ namespace API_Vinted.Migrations
 
                     b.HasOne("API_Vinted.Models.EntityFramework.Retour", "Retours")
                         .WithMany("Achats")
-                        .HasForeignKey("IDRetour")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IDRetour");
 
                     b.Navigation("OptionLivraison");
 
@@ -1053,8 +1146,8 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Article", b =>
                 {
                     b.HasOne("API_Vinted.Models.EntityFramework.Categorie", "Categorie")
-                        .WithOne("Articles")
-                        .HasForeignKey("API_Vinted.Models.EntityFramework.Article", "IDCategorie")
+                        .WithMany("Articles")
+                        .HasForeignKey("IDCategorie")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1083,10 +1176,8 @@ namespace API_Vinted.Migrations
                         .IsRequired();
 
                     b.HasOne("API_Vinted.Models.EntityFramework.Achat", "Achat")
-                        .WithOne("Articles")
-                        .HasForeignKey("API_Vinted.Models.EntityFramework.Article", "NumTransaction")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Articles")
+                        .HasForeignKey("NumTransaction");
 
                     b.Navigation("Achat");
 
@@ -1189,9 +1280,7 @@ namespace API_Vinted.Migrations
                 {
                     b.HasOne("API_Vinted.Models.EntityFramework.Categorie", "CategorieParent")
                         .WithMany("CategoriesEnfants")
-                        .HasForeignKey("IDCategorieParent")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IDCategorieParent");
 
                     b.Navigation("CategorieParent");
                 });
@@ -1199,28 +1288,22 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Client", b =>
                 {
                     b.HasOne("API_Vinted.Models.EntityFramework.Adresse", "AdresseFacturation")
-                        .WithOne("ClientAdresseFacturation")
-                        .HasForeignKey("API_Vinted.Models.EntityFramework.Client", "IDAdresseFacturation")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("ClientAdresseFacturation")
+                        .HasForeignKey("IDAdresseFacturation");
 
                     b.HasOne("API_Vinted.Models.EntityFramework.Adresse", "AdresseLivraison")
-                        .WithOne("ClientAdresseLivraison")
-                        .HasForeignKey("API_Vinted.Models.EntityFramework.Client", "IDAdresseLivraison")
+                        .WithMany("ClientAdresseLivraison")
+                        .HasForeignKey("IDAdresseLivraison")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("API_Vinted.Models.EntityFramework.Langue", "Langue")
                         .WithMany("Clients")
-                        .HasForeignKey("IDLangue")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IDLangue");
 
                     b.HasOne("API_Vinted.Models.EntityFramework.Photo", "Photo")
                         .WithMany("Clients")
-                        .HasForeignKey("IDPhoto")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IDPhoto");
 
                     b.HasOne("API_Vinted.Models.EntityFramework.Sexe", "Sexe")
                         .WithMany("Clients")
@@ -1256,6 +1339,25 @@ namespace API_Vinted.Migrations
                         .IsRequired();
 
                     b.Navigation("Client");
+                });
+
+            modelBuilder.Entity("API_Vinted.Models.EntityFramework.CouleurArticle", b =>
+                {
+                    b.HasOne("API_Vinted.Models.EntityFramework.Article", "Article")
+                        .WithMany("CouleursArticle")
+                        .HasForeignKey("IDArticle")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("API_Vinted.Models.EntityFramework.Couleur", "Couleur")
+                        .WithMany("CouleursArticle")
+                        .HasForeignKey("IDCouleur")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Article");
+
+                    b.Navigation("Couleur");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.EnvoiRelais", b =>
@@ -1376,9 +1478,7 @@ namespace API_Vinted.Migrations
                 {
                     b.HasOne("API_Vinted.Models.EntityFramework.OptionLivraison", "Option")
                         .WithMany("Retours")
-                        .HasForeignKey("IDOption")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IDOption");
 
                     b.Navigation("Option");
                 });
@@ -1434,22 +1534,21 @@ namespace API_Vinted.Migrations
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Achat", b =>
                 {
-                    b.Navigation("Articles")
-                        .IsRequired();
+                    b.Navigation("Articles");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Adresse", b =>
                 {
-                    b.Navigation("ClientAdresseFacturation")
-                        .IsRequired();
+                    b.Navigation("ClientAdresseFacturation");
 
-                    b.Navigation("ClientAdresseLivraison")
-                        .IsRequired();
+                    b.Navigation("ClientAdresseLivraison");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Article", b =>
                 {
                     b.Navigation("CaracteristiquesArticle");
+
+                    b.Navigation("CouleursArticle");
 
                     b.Navigation("EtatsArticles");
 
@@ -1473,8 +1572,7 @@ namespace API_Vinted.Migrations
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Categorie", b =>
                 {
-                    b.Navigation("Articles")
-                        .IsRequired();
+                    b.Navigation("Articles");
 
                     b.Navigation("CaracteristiquesCategorie");
 
@@ -1507,6 +1605,11 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.CodePostal", b =>
                 {
                     b.Navigation("Villes");
+                });
+
+            modelBuilder.Entity("API_Vinted.Models.EntityFramework.Couleur", b =>
+                {
+                    b.Navigation("CouleursArticle");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Etat", b =>

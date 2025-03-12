@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("formatcolis")]
+    [Table("format_colis")]
     public class FormatColis
     {
 
@@ -13,14 +13,14 @@ namespace API_Vinted.Models.EntityFramework
 
         [Column("libelleformat")]
         [StringLength(20)]
-        public string LibelleFormat { get; set; } = null!;
+        public string? LibelleFormat { get; set; } 
 
-        [Column("fraisport")]
-        public float FraisDePort { get; set; }
+        [Column("fraisdeport")]
+        public float? FraisDePort { get; set; }
 
         [Column("descriptionformat")]
         [StringLength(300)]
-        public string DescriptonFormat { get; set; } = null!;
+        public string? DescriptonFormat { get; set; } 
 
         [InverseProperty(nameof(Article.FormatColis))]
         public ICollection<Article> Articles { get; set; } = null!;

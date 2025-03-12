@@ -1,13 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("etat_article")]
-
+    [PrimaryKey("IDArticle","IDEtat")]
     public partial class EtatArticle
     {
-        [Required]
+        [Key]
         [Column("idarticle")]
         public int IDArticle { get; set; }
 

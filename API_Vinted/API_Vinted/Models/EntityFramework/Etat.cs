@@ -16,7 +16,7 @@ namespace API_Vinted.Models.EntityFramework
 
         [Required]
         [Column("libelleetat")]
-        public int LibelleEtat { get; set; }
+        public string LibelleEtat { get; set; } = null!;
 
     }
 }

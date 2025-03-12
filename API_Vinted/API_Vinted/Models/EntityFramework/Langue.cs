@@ -7,7 +7,7 @@ namespace API_Vinted.Models.EntityFramework
     public class Langue
     {
         [Key]
-        [Column("IDLangue")]
+        [Column("idLangue")]
         public int IDLangue { get; set; }
 
         [Column("libellelangue")]

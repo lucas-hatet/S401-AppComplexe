@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace API_Vinted.Models.EntityFramework
 {
@@ -25,6 +26,21 @@ namespace API_Vinted.Models.EntityFramework
 
             base.OnModelCreating(modelBuilder);
 
+            foreach (var entity in modelBuilder.Model.GetEntityTypes())
+            {
+                // Recherche toutes les propriétés qui commencent par "Id"
+                var idProperty = entity.GetProperties()
+                    .FirstOrDefault(p => p.Name.StartsWith("ID") && p.ClrType == typeof(int));
+
+                if (idProperty != null)
+                {
+                    modelBuilder.Entity(entity.ClrType)
+                        .Property(idProperty.Name)
+                        .UseIdentityColumn() // Commence à 1, incrémente de 1
+                        .HasIdentityOptions(startValue: 1, incrementBy: 1); // Définit le début à 1 et incrémente de 1
+
+                }
+            }
 
             modelBuilder.Entity<Achat>()
                .Property(b => b.DateAchat)

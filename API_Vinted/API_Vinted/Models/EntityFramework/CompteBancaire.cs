@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("comptebancaire")]
+    [Table("compte_bancaire")]
     public partial class CompteBancaire
     {
         [Key]
@@ -16,13 +16,13 @@ namespace API_Vinted.Models.EntityFramework
 
         [Required]
         [Column("iban")]
-        [StringLength(50)]
-        public string Iban { get; set; }
+        [StringLength(300)]
+        public string Iban { get; set; } = null!;
 
         [Required]
         [Column("titulairecompte")]
-        [StringLength(50)]
-        public string TitulaireCompte { get; set; }
+        [StringLength(300)]
+        public string TitulaireCompte { get; set; } = null!;
 
 
         [ForeignKey(nameof(IDClient))]

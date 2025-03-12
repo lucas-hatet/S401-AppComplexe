@@ -20,7 +20,7 @@ namespace API_Vinted.Models.EntityFramework
         public string MotifSignalement { get; set; } = null!;
 
         [Column("datesignalement",TypeName = "Date")]
-        public DateTime DateSignalement { get; set; }
+        public DateTime? DateSignalement { get; set; }
 
         [ForeignKey(nameof(IDClient))]
         [InverseProperty(nameof(Client.Signalements))]

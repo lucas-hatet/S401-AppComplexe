@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("envoirelais")]
+    [Table("envoi_relais")]
     public partial class EnvoiRelais
     {
         [Key]

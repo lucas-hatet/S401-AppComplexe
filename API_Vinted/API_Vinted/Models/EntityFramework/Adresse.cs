@@ -8,10 +8,10 @@ namespace API_Vinted.Models.EntityFramework
     {
 
         [InverseProperty(nameof(Client.AdresseLivraison))]
-        public Client ClientAdresseLivraison { get; set; } = null!;
+        public ICollection<Client> ClientAdresseLivraison { get; set; } = null!;
         
         [InverseProperty(nameof(Client.AdresseFacturation))]
-        public Client ClientAdresseFacturation { get; set; } = null!;
+        public ICollection<Client> ClientAdresseFacturation { get; set; } = null!;
 
 
         [Key]
@@ -32,7 +32,7 @@ namespace API_Vinted.Models.EntityFramework
 
         [Column("adresseligne2")]
         [StringLength(50)]
-        public string AdresseLigne2 { get; set; }
+        public string? AdresseLigne2 { get; set; }
 
         [ForeignKey(nameof(IDVille))]
         [InverseProperty(nameof(Ville.Adresses))]

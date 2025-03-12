@@ -11,15 +11,15 @@ namespace API_Vinted.Models.EntityFramework
         public int IDCategorie { get; set; }
 
         [Column("idcategorieparent")]
-        public int IDCategorieParent { get; set; }
+        public int? IDCategorieParent { get; set; }
 
         [Column("libellecategorie")]
         [StringLength(50)]
-        public string LibelleCategorie { get; set; }
+        public string? LibelleCategorie { get; set; }
 
 
         [InverseProperty(nameof(Article.Categorie))]
-        public Article Articles { get; set; } = null!;
+        public ICollection<Article> Articles { get; set; } = null!;
 
 
         [InverseProperty(nameof(CaracteristiqueCategorie.Categorie))]

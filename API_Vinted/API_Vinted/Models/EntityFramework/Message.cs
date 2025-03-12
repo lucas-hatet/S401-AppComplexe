@@ -24,7 +24,7 @@ namespace API_Vinted.Models.EntityFramework
         public DateTime DateMessage { get; set; }
 
         [Column("prixoffre")]
-        public double PrixOffre { get; set; }
+        public double? PrixOffre { get; set; }
 
         [ForeignKey(nameof(IDExpediteur))]
         [InverseProperty(nameof(Client.MessagesEnvoyes))]
