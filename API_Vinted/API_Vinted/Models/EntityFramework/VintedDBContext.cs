@@ -24,6 +24,19 @@ namespace API_Vinted.Models.EntityFramework
             modelBuilder.HasDefaultSchema("public");
 
             base.OnModelCreating(modelBuilder);
+
+
+            modelBuilder.Entity<Achat>()
+               .Property(b => b.DateAchat)
+               .HasDefaultValueSql("CURRENT_DATE");
+
+            modelBuilder.Entity<Article>()
+               .Property(b => b.DateAjout)
+               .HasDefaultValueSql("CURRENT_DATE");
+
+            modelBuilder.Entity<Article>()
+               .Property(b => b.NBVue)
+               .HasDefaultValue(0);
         }
     }
 }
