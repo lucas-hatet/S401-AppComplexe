@@ -18,34 +18,33 @@ namespace API_Vinted.Models.EntityFramework
 
         [InverseProperty(nameof(CarteBleue.Client))]
         public List<CarteBleue> CartesBleues { get; set; } = null!;
-        public Article Articles { get; set; } = null!;
 
         [InverseProperty(nameof(Signalement.Client))]
         public List<Signalement> Signalements { get; set; } = null!;
         [Key]
         [Column("idclient")]
-        public int IdClient { get; set; }
+        public int IDClient { get; set; }
 
         [Required]
         [Column("idville")]
-        public int IdVille { get; set; }
+        public int IDVille { get; set; }
 
         [Column("idlangue")]
-        public int IdLangue { get; set; }
+        public int IDLangue { get; set; }
 
         [Required]
         [Column("idadresselivraison")]
-        public int IdAdresseLivraison { get; set; }
+        public int IDAdresseLivraison { get; set; }
 
         [Column("idadressefacturation")]
-        public int IdAdresseFacturation { get; set; }
+        public int IDAdresseFacturation { get; set; }
 
         [Required]
         [Column("idsexe")]
-        public int IdSexe { get; set; }
+        public int IDSexe { get; set; }
 
         [Column("idphoto")]
-        public int IdPhoto { get; set; }
+        public int IDPhoto { get; set; }
 
         [Required]
         [Column("pseudo")]
@@ -97,7 +96,7 @@ namespace API_Vinted.Models.EntityFramework
         public string RaisonSociale { get; set; }
         
 
-        [ForeignKey(nameof(IdVille))]
+        [ForeignKey(nameof(IDVille))]
         [InverseProperty(nameof(Ville.Adresses))]
         public Ville Ville { get; set; } = null!;
 
