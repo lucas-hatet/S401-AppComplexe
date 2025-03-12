@@ -1,10 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public partial class Langue
+    [Table("langue")]
+    public class Langue
     {
-        [InverseProperty(nameof(Client.Langue))]
-        public ICollection<Client> Clients { get; set; } = null!;
-    }
+            [Key]
+            [Column("IDLangue")]
+            public int IDLangue { get; set; }
+
+            [Column("libellelangue")]
+            [StringLength(50)]
+            public string Libellelangue { get; set; } = null!;
+
+        }
 }
