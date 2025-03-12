@@ -15,6 +15,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idarticle")]
         public int IDArticle { get; set; }
 
+        [Required]
         [Column("motifsignalement")]
         public string MotifSignalement { get; set; } = null!;
 

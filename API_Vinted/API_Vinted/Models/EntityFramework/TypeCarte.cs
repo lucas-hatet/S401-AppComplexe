@@ -14,6 +14,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idtypecarte")]
         public int IDTypeCarte { get; set; }
 
+        [Required]
         [Column("libelletypecarte")]
         [StringLength(50)]
         public String LibelleTypeCarte { get; set; } = null!;

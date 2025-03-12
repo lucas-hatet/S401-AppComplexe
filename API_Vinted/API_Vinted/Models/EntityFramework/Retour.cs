@@ -21,6 +21,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("demandeexpert")]
         public bool DemandeExpert { get; set; }
 
+        [Required]
         [Column("coderetour")]
         [StringLength(50)]
         public string CodeRetour { get; set; } = null!;
@@ -32,6 +33,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("Accepte")]
         public bool Accepte { get; set; }
 
+        [Required]
         [Column("motifretour")]
         [StringLength(300)]
         public string MotifRetour { get; set; } = null!;

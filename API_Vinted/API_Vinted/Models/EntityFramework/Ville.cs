@@ -14,6 +14,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idville")]
         public int IDVille { get; set; }
 
+        [Required]
         [Column("codepostal", TypeName = "char(5)")]
         public string CodePostal { get; set; } = null!;
 
