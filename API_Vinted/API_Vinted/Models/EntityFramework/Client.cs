@@ -86,7 +86,7 @@ namespace API_Vinted.Models.EntityFramework
 
         [Required]
         [Column("datederniereconnexion", TypeName = "Date")]
-        public string DateDerniereConnexion { get; set; }
+        public DateTime DateDerniereConnexion { get; set; }
 
         [Required]
         [Column("numsiret")]
