@@ -82,5 +82,8 @@ namespace API_Vinted.Models.EntityFramework
 
         [InverseProperty(nameof(CaracteristiqueArticle.Article))]
         public virtual ICollection<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
+
+        [InverseProperty(nameof(PhotoArticle.Article))]
+        public virtual ICollection<PhotoArticle> Photos { get; set; } = null!;
     }
 }

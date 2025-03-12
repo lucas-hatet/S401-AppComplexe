@@ -11,6 +11,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idphoto")]
         public int IDPhoto { get; set; }
 
+        [Required]
         [Column("idretour")]
         public int IDRetour { get; set; }
 
