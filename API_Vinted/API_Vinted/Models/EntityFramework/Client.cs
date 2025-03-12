@@ -127,5 +127,15 @@ namespace API_Vinted.Models.EntityFramework
         [ForeignKey(nameof(IDPhoto))]
         [InverseProperty(nameof(Photo.Clients))]
         public virtual Photo Photo { get; set; } = null!;
+        public Photo Photo { get; set; } = null!;
+
+        [InverseProperty(nameof(Message.Expediteur))]
+        public virtual ICollection<Message> MessagesEnvoyes { get; set; } = null!;
+
+        [InverseProperty(nameof(Message.Destinataire))]
+        public virtual ICollection<Message> MessagesRecus { get; set; } = null!;
+
+        [InverseProperty(nameof(Favori.Client))]
+        public virtual ICollection<Favori> Favoris { get; set; } = null!;
     }
 }

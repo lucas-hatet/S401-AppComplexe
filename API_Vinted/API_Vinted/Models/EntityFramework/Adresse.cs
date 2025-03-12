@@ -4,13 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("adresse")]
-    public class Adresse
+    public partial class Adresse
     {
 
         [InverseProperty(nameof(Client.AdresseLivraison))]
         public Client ClientAdresseLivraison { get; set; } = null!;
         
-        [InverseProperty(nameof(Client.AdresseLivraison))]
+        [InverseProperty(nameof(Client.AdresseFacturation))]
         public Client ClientAdresseFacturation { get; set; } = null!;
 
 

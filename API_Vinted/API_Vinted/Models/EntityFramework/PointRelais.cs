@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("point_relais")]
-    public abstract class PointRelais
+    public partial class PointRelais
     {
         [InverseProperty(nameof(EnvoiRelais.PointRelais))]
         public virtual List<EnvoiRelais> EnvoisRelais { get; set; } = null!;
