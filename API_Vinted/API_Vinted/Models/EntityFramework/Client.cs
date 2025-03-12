@@ -7,5 +7,8 @@ namespace API_Vinted.Models.EntityFramework
 
         [InverseProperty(nameof(Article.Vendeur))]
         public Article Articles { get; set; } = null!;
+
+        [InverseProperty(nameof(Signalement.Client))]
+        public List<Signalement> Signalements { get; set; } = null!;
     }
 }
