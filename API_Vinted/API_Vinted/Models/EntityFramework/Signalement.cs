@@ -27,6 +27,6 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDArticle))]
         [InverseProperty(nameof(Article.Signalements))]
-        public Article Article { get; set; } = null!;
+        public virtual Article Article { get; set; } = null!;
     }
 }

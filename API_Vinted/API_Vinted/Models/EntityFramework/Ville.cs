@@ -28,6 +28,6 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDPays))]
         [InverseProperty(nameof(Pays.Villes))]
-        public Pays Pays { get; set; } = null!;
+        public virtual Pays Pays { get; set; } = null!;
     }
 }

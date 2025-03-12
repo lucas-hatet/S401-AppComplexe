@@ -37,11 +37,10 @@ namespace API_Vinted.Models.EntityFramework
         public string MotifRetour { get; set; } = null!;
 
         [InverseProperty(nameof(Achat.Retours))]
-        public List<Achat> Achats { get; set; } = null!;
-        public Achat Achats { get; set; } = null!;
+        public virtual ICollection<Achat> Achats { get; set; } = null!;
 
         [ForeignKey(nameof(IDOption))]
         [InverseProperty(nameof(OptionLivraison.Retours))]
-        public OptionLivraison Option { get; set; } = null!; //si cette ligne pose problème c'est la faute de Simon.
+        public virtual OptionLivraison Option { get; set; } = null!; //si cette ligne pose problème c'est la faute de Simon.
     }
 }
