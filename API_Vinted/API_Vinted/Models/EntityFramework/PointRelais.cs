@@ -16,6 +16,7 @@ namespace API_Vinted.Models.EntityFramework
 
         [Required]
         [Column("nomrelais")]
+        [StringLength(50)]
         public string nomrelais { get; set; } = null!;
     }
 }
