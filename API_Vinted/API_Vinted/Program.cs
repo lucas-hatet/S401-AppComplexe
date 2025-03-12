@@ -17,6 +17,9 @@ builder.Services.AddDbContext<VintedDBContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<DataManager<Achat>>();
+builder.Services.AddScoped<DataManager<Article>>();
+builder.Services.AddScoped<DataManager<Client>>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

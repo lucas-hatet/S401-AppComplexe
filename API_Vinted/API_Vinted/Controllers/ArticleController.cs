@@ -6,11 +6,11 @@ namespace API_Vinted.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ArticleController : BaseController<Achat>
+    public class ArticleController : BaseController<Article>
     {
-        private readonly DataManager<Achat> dataRepository;
+        private readonly DataManager<Article> dataRepository;
 
-        public ArticleController(DataManager<Achat> repository)
+        public ArticleController(DataManager<Article> repository)
             : base(repository)
         {
             dataRepository = repository;

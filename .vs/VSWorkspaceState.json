@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\API_Vinted",
+    "\\API_Vinted\\API_Vinted",
+    "\\API_Vinted\\API_Vinted\\Models",
+    "\\API_Vinted\\API_Vinted\\Models\\EntityFramework"
   ],
-  "SelectedNode": "\\API_Vinted.sln",
+  "SelectedNode": "\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Favori.cs",
   "PreviewInSolutionExplorer": false
 }
