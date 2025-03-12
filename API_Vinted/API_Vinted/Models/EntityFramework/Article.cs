@@ -92,7 +92,7 @@ namespace API_Vinted.Models.EntityFramework
         [InverseProperty(nameof(Message.Article))]
         public virtual ICollection<Message> Messages { get; set; } = null!;
 
-        [InverseProperty(nameof(Favori.Client))]
+        [InverseProperty(nameof(Favori.Article))]
         public virtual ICollection<Favori> Favoris { get; set; } = null!;
     }
 }

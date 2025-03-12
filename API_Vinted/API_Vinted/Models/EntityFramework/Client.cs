@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("client")]
-    public abstract class Client
+    public partial class Client
     {
 
         [InverseProperty(nameof(Article.Vendeur))]
@@ -127,7 +127,6 @@ namespace API_Vinted.Models.EntityFramework
         [ForeignKey(nameof(IDPhoto))]
         [InverseProperty(nameof(Photo.Clients))]
         public virtual Photo Photo { get; set; } = null!;
-        public Photo Photo { get; set; } = null!;
 
         [InverseProperty(nameof(Message.Expediteur))]
         public virtual ICollection<Message> MessagesEnvoyes { get; set; } = null!;

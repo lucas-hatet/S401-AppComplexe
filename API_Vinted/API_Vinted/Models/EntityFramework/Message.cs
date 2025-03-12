@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("Message")]
+    [Table("message")]
     [PrimaryKey("IDExpediteur", "IDDestinataire", "IDArticle", "ContenuMessage", "DateMessage")]
     public partial class Message
     {

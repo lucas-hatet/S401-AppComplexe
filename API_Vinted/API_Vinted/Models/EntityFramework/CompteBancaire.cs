@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("comptebancaire")]
-    public abstract class CompteBancaire
+    public partial class CompteBancaire
     {
         [Key]
         [Column("idcompte")]

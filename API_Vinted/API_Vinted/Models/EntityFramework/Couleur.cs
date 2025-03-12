@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("couleur")]
-    public abstract class Couleur
+    public partial class Couleur
     {
         [InverseProperty(nameof(CouleurArticle.Couleur))]
         public List<Couleur> CouleursArticle { get; set; } = null!;

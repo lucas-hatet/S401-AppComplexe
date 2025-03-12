@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("codepostal")]
-    public abstract class CodePostal
+    public partial class CodePostal
     {
         [InverseProperty(nameof(Ville.CodePostal))]
         public List<Ville> Villes { get; set; } = null!;

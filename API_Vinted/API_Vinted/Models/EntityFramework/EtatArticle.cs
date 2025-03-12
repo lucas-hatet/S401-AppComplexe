@@ -3,12 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace API_Vinted.Models.EntityFramework
 {
+    [Table("etat_article")]
+
     public partial class EtatArticle
     {
-        [InverseProperty(nameof(EtatArticle.Etat))]
-        public virtual List<EtatArticle> EtatsArticle { get; set; } = null!;
-
-
         [Required]
         [Column("idarticle")]
         public int IDArticle { get; set; }

@@ -6,7 +6,7 @@ namespace API_Vinted.Models.EntityFramework
 {
     [Table("couleur")]
     [PrimaryKey("IDCouleur", "IDArticle")]
-    public abstract class CouleurArticle
+    public partial class CouleurArticle
     {
         [Key]
         [Column("idcouleur")]

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("Pays")]
+    [Table("pays")]
     public partial class Pays
     {
         [Key]

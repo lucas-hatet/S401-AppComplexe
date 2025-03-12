@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("envoirelais")]
-    public abstract class EnvoiRelais
+    public partial class EnvoiRelais
     {
         [Key]
         [Column("idclient")]
