@@ -6,13 +6,15 @@ namespace API_Vinted.Models.EntityFramework
     [Table("langue")]
     public class Langue
     {
-            [Key]
-            [Column("IDLangue")]
-            public int IDLangue { get; set; }
+        [Key]
+        [Column("IDLangue")]
+        public int IDLangue { get; set; }
 
-            [Column("libellelangue")]
-            [StringLength(50)]
-            public string Libellelangue { get; set; } = null!;
+        [Column("libellelangue")]
+        [StringLength(50)]
+        public string Libellelangue { get; set; } = null!;
 
-        }
+        [InverseProperty(nameof(Client.Langue))]
+        public ICollection<Client> Clients { get; set; } = null!;
+    }
 }
