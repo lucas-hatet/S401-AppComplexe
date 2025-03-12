@@ -21,6 +21,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("demandeexpert")]
         public bool DemandeExpert { get; set; }
 
+        [Required]
         [Column("coderetour")]
         [StringLength(50)]
         public string CodeRetour { get; set; } = null!;
@@ -32,16 +33,19 @@ namespace API_Vinted.Models.EntityFramework
         [Column("Accepte")]
         public bool Accepte { get; set; }
 
+        [Required]
         [Column("motifretour")]
         [StringLength(300)]
         public string MotifRetour { get; set; } = null!;
 
         [InverseProperty(nameof(Achat.Retours))]
-        public List<Achat> Achats { get; set; } = null!;
-        public Achat Achats { get; set; } = null!;
+        public virtual ICollection<Achat> Achats { get; set; } = null!;
 
         [ForeignKey(nameof(IDOption))]
         [InverseProperty(nameof(OptionLivraison.Retours))]
-        public OptionLivraison Option { get; set; } = null!; //si cette ligne pose problème c'est la faute de Simon.
+        public virtual OptionLivraison Option { get; set; } = null!; //si cette ligne pose problème c'est la faute de Simon.
+
+        [InverseProperty(nameof(PhotoRetour.Retour))]
+        public virtual ICollection<PhotoRetour> Photos { get; set; }
     }
 }

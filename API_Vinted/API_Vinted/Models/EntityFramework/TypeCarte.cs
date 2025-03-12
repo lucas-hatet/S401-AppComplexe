@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("typecarte")]
+    [Table("type_carte")]
     public class TypeCarte
     {
         [InverseProperty(nameof(CarteBleue.TypeCarte))]
@@ -14,6 +13,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idtypecarte")]
         public int IDTypeCarte { get; set; }
 
+        [Required]
         [Column("libelletypecarte")]
         [StringLength(50)]
         public String LibelleTypeCarte { get; set; } = null!;

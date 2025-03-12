@@ -18,6 +18,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idville")]
         public int IDVille { get; set; }
 
+        [Required]
         [Column("codepostal", TypeName = "char(5)")]
         public string CodePostal { get; set; } = null!;
 
@@ -32,6 +33,6 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDPays))]
         [InverseProperty(nameof(Pays.Villes))]
-        public Pays Pays { get; set; } = null!;
+        public virtual Pays Pays { get; set; } = null!;
     }
 }

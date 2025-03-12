@@ -13,6 +13,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idsexe")]
         public int IDSexe { get; set; }
 
+        [Required]
         [Column("libellesexe")]
         [StringLength(20)]
         public string LibelleSexe { get; set; } = null!;
