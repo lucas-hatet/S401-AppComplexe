@@ -44,5 +44,8 @@ namespace API_Vinted.Models.EntityFramework
         [ForeignKey(nameof(IDOption))]
         [InverseProperty(nameof(OptionLivraison.Retours))]
         public virtual OptionLivraison Option { get; set; } = null!; //si cette ligne pose problème c'est la faute de Simon.
+
+        [InverseProperty(nameof(PhotoRetour.Retour))]
+        public virtual ICollection<PhotoRetour> Photos { get; set; }
     }
 }
