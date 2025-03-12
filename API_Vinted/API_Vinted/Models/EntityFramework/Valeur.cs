@@ -14,15 +14,17 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idcaracteristique")]
         public int IDCaracteristique { get; set; }
 
+        [Required]
         [Column("valeur")]
         [StringLength(50)]
         public string LibValeur { get; set; } = null!;
 
+
         [ForeignKey(nameof(IDCaracteristique))]
         [InverseProperty(nameof(Caracteristique.Valeurs))]
-        public Caracteristique Caracteristique { get; set; } = null!;
+        public virtual Caracteristique Caracteristique { get; set; } = null!;
 
         [InverseProperty(nameof(CaracteristiqueArticle.Valeur))]
-        public List<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
+        public virtual ICollection<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
     }
 }

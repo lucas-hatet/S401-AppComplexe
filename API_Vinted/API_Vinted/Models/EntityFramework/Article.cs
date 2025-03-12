@@ -73,7 +73,7 @@ namespace API_Vinted.Models.EntityFramework
         [InverseProperty(nameof(Models.EntityFramework.FormatColis.Articles))]
         public virtual FormatColis FormatColis { get; set; } = null!;
 
-        [ForeignKey(nameof(IDArticle))]
+        [ForeignKey(nameof(IDMarque))]
         [InverseProperty(nameof(Models.EntityFramework.Marque.Articles))]
         public virtual Marque Marque { get; set; } = null!;
 
@@ -82,5 +82,9 @@ namespace API_Vinted.Models.EntityFramework
 
         [InverseProperty(nameof(CaracteristiqueArticle.Article))]
         public virtual ICollection<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
+        public virtual ICollection<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
+
+        [InverseProperty(nameof(PhotoArticle.Article))]
+        public virtual ICollection<PhotoArticle> Photos { get; set; } = null!;
     }
 }

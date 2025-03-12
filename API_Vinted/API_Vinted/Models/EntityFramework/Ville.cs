@@ -6,16 +6,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("ville")]
-    public class Ville
+    public partial class Ville
     {
         [InverseProperty(nameof(Adresse.Ville))]
-        public List<Adresse> Adresses { get; set; } = null!;
+        public ICollection<Adresse> Adresses { get; set; } = null!;
+
+        [InverseProperty(nameof(Client.Ville))]
+        public ICollection<Client> Clients { get; set; } = null!;
+
         [Key]
         [Column("idville")]
         public int IDVille { get; set; }
 
+        [Required]
         [Column("codepostal", TypeName = "char(5)")]
-        public string CodePostal { get; set; } = null!;
+        public string CP { get; set; } = null!;
 
         [Required]
         [Column("idpays")]
@@ -28,6 +33,10 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDPays))]
         [InverseProperty(nameof(Pays.Villes))]
-        public Pays Pays { get; set; } = null!;
+        public virtual Pays Pays { get; set; } = null!;
+
+        [ForeignKey(nameof(CP))]
+        [InverseProperty(nameof(CodePostal.Villes))]
+        public CodePostal CodePostal { get; set; } = null!;
     }
 }

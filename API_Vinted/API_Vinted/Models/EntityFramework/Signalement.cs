@@ -15,6 +15,7 @@ namespace API_Vinted.Models.EntityFramework
         [Column("idarticle")]
         public int IDArticle { get; set; }
 
+        [Required]
         [Column("motifsignalement")]
         public string MotifSignalement { get; set; } = null!;
 
@@ -27,6 +28,6 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDArticle))]
         [InverseProperty(nameof(Article.Signalements))]
-        public Article Article { get; set; } = null!;
+        public virtual Article Article { get; set; } = null!;
     }
 }
