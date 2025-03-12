@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\S401-AppComplexe\\API_Vinted\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\hatetl\\source\\repos\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\hatetl\\source\\repos\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\hatetl\\source\\repos\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\adresse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\adresse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\hatetl\\source\\repos\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Adresse.cs",
+              "DocumentMoniker": "C:\\Users\\hatetl\\source\\repos\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "ToolTip": "C:\\Users\\hatetl\\source\\repos\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIA1wBoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T10:24:33.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\hatetl\\source\\repos\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "ToolTip": "C:\\Users\\hatetl\\source\\repos\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAmwDgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:43:19.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\hatetl\\source\\repos\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "ToolTip": "C:\\Users\\hatetl\\source\\repos\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAADwv1cAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T09:34:10.319Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

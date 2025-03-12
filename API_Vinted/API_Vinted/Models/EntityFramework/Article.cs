@@ -77,6 +77,9 @@ namespace API_Vinted.Models.EntityFramework
         [InverseProperty(nameof(Models.EntityFramework.Marque.Articles))]
         public Marque Marque { get; set; } = null!;
 
+        [InverseProperty(nameof(Signalement.Article))]
+        public List<Signalement> Signalements { get; set; } = null!;
+
         [InverseProperty(nameof(CaracteristiqueArticle.Article))]
         public List<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
     }
