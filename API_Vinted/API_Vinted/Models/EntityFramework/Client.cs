@@ -13,7 +13,7 @@ namespace API_Vinted.Models.EntityFramework
         [InverseProperty(nameof(Avis.Vendeur))]
         public List<Avis> AvisSur { get; set; } = null!;
 
-        [InverseProperty(nameof(Avis.Acheteur))]
+        [InverseProperty(nameof(Avis.Acheteur))] 
         public List<Avis> AvisMis { get; set; } = null!;
 
         [InverseProperty(nameof(CarteBleue.Client))]
@@ -21,6 +21,8 @@ namespace API_Vinted.Models.EntityFramework
 
         [InverseProperty(nameof(Signalement.Client))]
         public List<Signalement> Signalements { get; set; } = null!;
+
+
         [Key]
         [Column("idclient")]
         public int IDClient { get; set; }
@@ -97,9 +99,27 @@ namespace API_Vinted.Models.EntityFramework
         
 
         [ForeignKey(nameof(IDVille))]
-        [InverseProperty(nameof(Ville.Adresses))]
+        [InverseProperty(nameof(Ville.Clients))]
         public Ville Ville { get; set; } = null!;
 
-        // Langue, ...
+        [ForeignKey(nameof(IDLangue))]
+        [InverseProperty(nameof(Langue.Clients))]
+        public Langue Langue { get; set; } = null!;
+
+        [ForeignKey(nameof(IDAdresseLivraison))]
+        [InverseProperty(nameof(Adresse.ClientAdresseLivraison))]
+        public Adresse AdresseLivraison { get; set; } = null!;
+
+        [ForeignKey(nameof(IDAdresseFacturation))]
+        [InverseProperty(nameof(Adresse.ClientAdresseFacturation))]
+        public Adresse AdresseFacturation { get; set; } = null!;
+
+        [ForeignKey(nameof(IDSexe))]
+        [InverseProperty(nameof(Sexe.Clients))]
+        public Sexe Sexe { get; set; } = null!;
+
+        [ForeignKey(nameof(IDPhoto))]
+        [InverseProperty(nameof(Photo.Clients))]
+        public Photo Photo { get; set; } = null!;
     }
 }

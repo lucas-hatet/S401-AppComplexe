@@ -6,6 +6,14 @@ namespace API_Vinted.Models.EntityFramework
     [Table("adresse")]
     public class Adresse
     {
+
+        [InverseProperty(nameof(Client.AdresseLivraison))]
+        public Client ClientAdresseLivraison { get; set; } = null!;
+        
+        [InverseProperty(nameof(Client.AdresseLivraison))]
+        public Client ClientAdresseFacturation { get; set; } = null!;
+
+
         [Key]
         [Column("idadresse")]
         public int IDAdresse { get; set; }

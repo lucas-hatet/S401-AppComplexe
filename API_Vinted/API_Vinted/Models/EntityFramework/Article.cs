@@ -73,7 +73,7 @@ namespace API_Vinted.Models.EntityFramework
         [InverseProperty(nameof(Models.EntityFramework.FormatColis.Articles))]
         public FormatColis FormatColis { get; set; } = null!;
 
-        [ForeignKey(nameof(IDArticle))]
+        [ForeignKey(nameof(IDMarque))]
         [InverseProperty(nameof(Models.EntityFramework.Marque.Articles))]
         public Marque Marque { get; set; } = null!;
 
