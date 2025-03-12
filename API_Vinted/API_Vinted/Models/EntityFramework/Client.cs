@@ -6,6 +6,12 @@ namespace API_Vinted.Models.EntityFramework
     [Table("client")]
     public partial class Client
     {
+
+        [InverseProperty(nameof(Article.Vendeur))]
+        public Article Articles { get; set; } = null!;
+
+        [InverseProperty(nameof(Signalement.Client))]
+        public List<Signalement> Signalements { get; set; } = null!;
         [Key]
         [Column("idclient")]
         public int IdClient { get; set; }
