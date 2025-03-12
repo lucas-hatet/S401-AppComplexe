@@ -7,5 +7,8 @@ namespace API_Vinted.Models.EntityFramework
 
         [InverseProperty(nameof(Achat.OptionLivraison))]
         public List<Achat> Achats { get; set; } = null!;
+
+        [InverseProperty(nameof(Retour.Option))]
+        public List<Retour> Retours { get; set; } = null!;
     }
 }
