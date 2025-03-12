@@ -22,6 +22,9 @@ namespace API_Vinted.Models.EntityFramework
         [InverseProperty(nameof(Signalement.Client))]
         public List<Signalement> Signalements { get; set; } = null!;
 
+        [InverseProperty(nameof(CompteBancaire.Client))]
+        public List<CompteBancaire> CompteBancaires { get; set; } = null!;
+
 
         [Key]
         [Column("idclient")]

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class CompteBancaire
+    public abstract class CompteBancaire
     {
         [Key]
         [Column("idcompte")]
@@ -22,5 +22,10 @@ namespace API_Vinted.Models.EntityFramework
         [Column("titulairecompte")]
         [StringLength(50)]
         public int TitulaireCompte { get; set; }
+
+
+        [ForeignKey(nameof(IDClient))]
+        [InverseProperty(nameof(Client.CompteBancaires))]
+        public Client Client { get; set; } = null!;
     }
 }
