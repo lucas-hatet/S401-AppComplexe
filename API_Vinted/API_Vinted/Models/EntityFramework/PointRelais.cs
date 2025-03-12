@@ -1,11 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("point_relais")]
-    public class PointRelais
+    public abstract class PointRelais
     {
+        [InverseProperty(nameof(EnvoiRelais.PointRelais))]
+        public virtual List<EnvoiRelais> EnvoisRelais { get; set; } = null!;
+
         [Key]
         [Column("idrelais")]
         public int IDRelais { get; set; }

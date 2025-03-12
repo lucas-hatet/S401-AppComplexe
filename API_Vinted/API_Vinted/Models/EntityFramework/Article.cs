@@ -6,6 +6,9 @@ namespace API_Vinted.Models.EntityFramework
     [Table("article")]
     public partial class Article
     {
+        [InverseProperty(nameof(EtatArticle.Article))]
+        public virtual List<EtatArticle> EtatsArticles { get; set; } = null!;
+
         [Key]
         [Column("idarticle")]
         public int IDArticle { get; set; }

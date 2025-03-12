@@ -4,26 +4,29 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("client")]
-    public partial class Client
+    public abstract class Client
     {
 
         [InverseProperty(nameof(Article.Vendeur))]
-        public List<Article> Articles { get; set; } = null!;
+        public virtual List<Article> Articles { get; set; } = null!;
 
         [InverseProperty(nameof(Avis.Vendeur))]
-        public List<Avis> AvisSur { get; set; } = null!;
+        public virtual List<Avis> AvisSur { get; set; } = null!;
 
         [InverseProperty(nameof(Avis.Acheteur))] 
-        public List<Avis> AvisMis { get; set; } = null!;
+        public virtual List<Avis> AvisMis { get; set; } = null!;
 
         [InverseProperty(nameof(CarteBleue.Client))]
-        public List<CarteBleue> CartesBleues { get; set; } = null!;
+        public virtual List<CarteBleue> CartesBleues { get; set; } = null!;
 
         [InverseProperty(nameof(Signalement.Client))]
-        public List<Signalement> Signalements { get; set; } = null!;
+        public virtual List<Signalement> Signalements { get; set; } = null!;
 
         [InverseProperty(nameof(CompteBancaire.Client))]
-        public List<CompteBancaire> CompteBancaires { get; set; } = null!;
+        public virtual List<CompteBancaire> CompteBancaires { get; set; } = null!;
+
+        [InverseProperty(nameof(EnvoiRelais.Client))]
+        public virtual List<EnvoiRelais> EnvoisRelais { get; set; } = null!;
 
 
         [Key]
@@ -54,7 +57,7 @@ namespace API_Vinted.Models.EntityFramework
         [Required]
         [Column("pseudo")]
         [StringLength(30)]
-        public string Pseudo { get; set; }
+        public string Pseudo { get; set; } = null!;
 
         [Required]
         [Column("mail")]
@@ -103,26 +106,26 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDVille))]
         [InverseProperty(nameof(Ville.Clients))]
-        public Ville Ville { get; set; } = null!;
+        public virtual Ville Ville { get; set; } = null!;
 
         [ForeignKey(nameof(IDLangue))]
         [InverseProperty(nameof(Langue.Clients))]
-        public Langue Langue { get; set; } = null!;
+        public virtual Langue Langue { get; set; } = null!;
 
         [ForeignKey(nameof(IDAdresseLivraison))]
         [InverseProperty(nameof(Adresse.ClientAdresseLivraison))]
-        public Adresse AdresseLivraison { get; set; } = null!;
+        public virtual Adresse AdresseLivraison { get; set; } = null!;
 
         [ForeignKey(nameof(IDAdresseFacturation))]
         [InverseProperty(nameof(Adresse.ClientAdresseFacturation))]
-        public Adresse AdresseFacturation { get; set; } = null!;
+        public virtual Adresse AdresseFacturation { get; set; } = null!;
 
         [ForeignKey(nameof(IDSexe))]
         [InverseProperty(nameof(Sexe.Clients))]
-        public Sexe Sexe { get; set; } = null!;
+        public virtual Sexe Sexe { get; set; } = null!;
 
         [ForeignKey(nameof(IDPhoto))]
         [InverseProperty(nameof(Photo.Clients))]
-        public Photo Photo { get; set; } = null!;
+        public virtual Photo Photo { get; set; } = null!;
     }
 }

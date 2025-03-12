@@ -1,6 +1,27 @@
-﻿namespace API_Vinted.Models.EntityFramework
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace API_Vinted.Models.EntityFramework
 {
-    public class CouleurArticle
+    [Table("couleur")]
+    [PrimaryKey("IDCouleur", "IDArticle")]
+    public abstract class CouleurArticle
     {
+        [Key]
+        [Column("idcouleur")]
+        public int IDCouleur { get; set; }
+
+        [Key]
+        [Required]
+        [Column("idarticle")]
+        public int IDArticle { get; set; }
+
+
+        [ForeignKey(nameof(IDCouleur))]
+        [InverseProperty(nameof(Couleur.CouleursArticle))]
+        public virtual Couleur Couleur { get; set; } = null!;
+
+        
     }
 }

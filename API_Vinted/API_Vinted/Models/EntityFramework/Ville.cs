@@ -29,7 +29,7 @@ namespace API_Vinted.Models.EntityFramework
         [Required]
         [Column("nomville")]
         [StringLength(50)]
-        public int NomVille { get; set; }
+        public string NomVille { get; set; }
 
         [ForeignKey(nameof(IDPays))]
         [InverseProperty(nameof(Pays.Villes))]

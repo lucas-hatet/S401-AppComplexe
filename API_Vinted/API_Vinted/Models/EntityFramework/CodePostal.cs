@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class CodePostal
+    [Table("codepostal")]
+    public abstract class CodePostal
     {
         [InverseProperty(nameof(Ville.CodePostal))]
         public List<Ville> Villes { get; set; } = null!;
