@@ -1,8 +1,6 @@
 ﻿namespace API_Vinted.Models.EntityFramework
 {
-
-    public class Article
+    public class Favori
     {
-
     }
 }

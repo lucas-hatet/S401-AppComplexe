@@ -1,12 +1,551 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fetres\\Desktop\\S401-AppComplexe\\API_Vinted\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\ville.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\ville.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\valeur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\valeur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\typecarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\typecarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\signalement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\signalement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\sexe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\sexe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\photoarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\photoarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\pays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\pays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\optionlivraison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\optionlivraison.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\modepaiement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\modepaiement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\marque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\marque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\langue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\langue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\favori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\favori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\etatarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\etatarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\etat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\etat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\couleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\couleur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\comptebancaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\comptebancaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\codepostal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\codepostal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\cartebleu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\cartebleu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\caracteristiquecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\caracteristiquecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\caracteristiquearticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\caracteristiquearticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\caracteristique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\caracteristique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\avis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\avis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\adresse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\adresse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\achat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\achat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\repository\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\repository\\idatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\sae401\\api_vinted\\api_vinted\\models\\entityframework\\vinteddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\vinteddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ville.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Ville.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Ville.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Ville.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Ville.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:31:35.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Valeur.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Valeur.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Valeur.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Valeur.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Valeur.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:31:22.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TypeCarte.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\TypeCarte.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\TypeCarte.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\TypeCarte.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\TypeCarte.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:31:06.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Signalement.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Signalement.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Signalement.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Signalement.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Signalement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:30:52.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sexe.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Sexe.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Sexe.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Sexe.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Sexe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:30:36.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PhotoArticle.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:30:25.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:30:08.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pays.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:29:58.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OptionLivraison.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\OptionLivraison.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\OptionLivraison.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\OptionLivraison.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\OptionLivraison.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:29:46.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ModePaiement.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\ModePaiement.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\ModePaiement.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\ModePaiement.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\ModePaiement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:29:29.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Message.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Message.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Message.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:29:09.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Marque.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Marque.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Marque.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Marque.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Marque.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:28:57.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Langue.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Langue.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Langue.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Langue.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Langue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:28:46.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Favori.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Favori.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Favori.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Favori.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Favori.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:28:26.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EtatArticle.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\EtatArticle.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\EtatArticle.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\EtatArticle.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\EtatArticle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:27:48.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Etat.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Etat.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Etat.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Etat.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Etat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:27:30.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Couleur.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Couleur.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Couleur.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Couleur.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Couleur.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:26:33.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CompteBancaire.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CompteBancaire.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CompteBancaire.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CompteBancaire.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\CompteBancaire.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:26:12.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CodePostal.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CodePostal.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CodePostal.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CodePostal.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\CodePostal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:25:48.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:25:23.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Categorie.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Categorie.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Categorie.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Categorie.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Categorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:25:11.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CarteBleu.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CarteBleu.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CarteBleu.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CarteBleu.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\CarteBleu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:24:47.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CaracteristiqueCategorie.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CaracteristiqueCategorie.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CaracteristiqueCategorie.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CaracteristiqueCategorie.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\CaracteristiqueCategorie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:24:27.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CaracteristiqueArticle.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CaracteristiqueArticle.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CaracteristiqueArticle.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CaracteristiqueArticle.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\CaracteristiqueArticle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:24:10.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Caracteristique.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Caracteristique.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Caracteristique.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Caracteristique.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Caracteristique.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:23:51.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Avis.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Avis.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Avis.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Avis.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Avis.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:23:23.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Adresse.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Adresse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:23:11.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Achat.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Achat.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Achat.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Achat.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Achat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:22:57.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IDataRepository.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\Repository\\IDataRepository.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\Repository\\IDataRepository.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\Repository\\IDataRepository.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\Repository\\IDataRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:16:07.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Article.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:14:12.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "VintedDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:10:23.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

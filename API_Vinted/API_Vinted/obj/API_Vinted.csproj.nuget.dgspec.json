@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fetres\\Desktop\\S401-AppComplexe\\API_Vinted\\API_Vinted\\API_Vinted.csproj": {}
+    "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\API_Vinted.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fetres\\Desktop\\S401-AppComplexe\\API_Vinted\\API_Vinted\\API_Vinted.csproj": {
+    "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\API_Vinted.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fetres\\Desktop\\S401-AppComplexe\\API_Vinted\\API_Vinted\\API_Vinted.csproj",
+        "projectUniqueName": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\API_Vinted.csproj",
         "projectName": "API_Vinted",
-        "projectPath": "C:\\Users\\fetres\\Desktop\\S401-AppComplexe\\API_Vinted\\API_Vinted\\API_Vinted.csproj",
+        "projectPath": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\API_Vinted.csproj",
         "packagesPath": "C:\\Users\\fetres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fetres\\Desktop\\S401-AppComplexe\\API_Vinted\\API_Vinted\\obj\\",
+        "outputPath": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

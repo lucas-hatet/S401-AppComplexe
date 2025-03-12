@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qh3IxDyvg+M=",
+  "dgSpecHash": "RQRv33K+AVk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fetres\\Desktop\\S401-AppComplexe\\API_Vinted\\API_Vinted\\API_Vinted.csproj",
+  "projectFilePath": "C:\\Users\\fetres\\Desktop\\SAE401\\API_Vinted\\API_Vinted\\API_Vinted.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fetres\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\fetres\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
