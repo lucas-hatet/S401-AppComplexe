@@ -37,6 +37,10 @@ namespace API_Vinted.Models.EntityFramework
             modelBuilder.Entity<Article>()
                .Property(b => b.NBVue)
                .HasDefaultValue(0);
+
+            modelBuilder.Entity<Avis>()
+               .Property(b => b.Automatique)
+               .HasDefaultValue(false);
         }
     }
 }

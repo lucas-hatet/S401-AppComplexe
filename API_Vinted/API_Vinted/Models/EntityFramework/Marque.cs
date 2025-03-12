@@ -6,6 +6,6 @@ namespace API_Vinted.Models.EntityFramework
     {
 
         [InverseProperty(nameof(Article.Marque))]
-        public Article Articles { get; set; } = null!;
+        public List<Article> Articles { get; set; } = null!;
     }
 }

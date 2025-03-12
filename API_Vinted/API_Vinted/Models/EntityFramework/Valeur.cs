@@ -20,6 +20,9 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDCaracteristique))]
         [InverseProperty(nameof(Caracteristique.Valeurs))]
-        public Caracteristique Caracteristique { get; set; }
+        public Caracteristique Caracteristique { get; set; } = null!;
+
+        [InverseProperty(nameof(CaracteristiqueArticle.Valeur))]
+        public List<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
     }
 }
