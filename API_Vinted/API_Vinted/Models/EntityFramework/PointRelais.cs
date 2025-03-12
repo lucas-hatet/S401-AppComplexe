@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    [Table("pointrelais")]
+    [Table("point_relais")]
     public class PointRelais
     {
         [Key]
