@@ -23,14 +23,14 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDOption))]
         [InverseProperty(nameof(Models.EntityFramework.OptionLivraison.Achats))]
-        public OptionLivraison OptionLivraison { get; set; } = null!;
+        public virtual OptionLivraison OptionLivraison { get; set; } = null!;
 
         [ForeignKey(nameof(IDRetour))]
         [InverseProperty(nameof(Retour.Achats))]
-        public Retour Retours { get; set; } = null!;
+        public virtual Retour Retours { get; set; } = null!;
 
         [InverseProperty(nameof(Article.Achat))]
-        public Article Articles { get; set; } = null!;
+        public virtual Article Articles { get; set; } = null!;
 
     }
 }

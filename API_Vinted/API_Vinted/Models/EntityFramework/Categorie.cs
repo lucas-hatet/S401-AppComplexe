@@ -23,13 +23,13 @@ namespace API_Vinted.Models.EntityFramework
 
 
         [InverseProperty(nameof(CaracteristiqueCategorie.Categorie))]
-        public List<CaracteristiqueCategorie> CaracteristiquesCategorie { get; set; } = null!;
+        public virtual ICollection<CaracteristiqueCategorie> CaracteristiquesCategorie { get; set; } = null!;
 
         [ForeignKey(nameof(IDCategorieParent))]
         [InverseProperty(nameof(Categorie.CategoriesEnfants))]
-        public Categorie CategorieParent { get; set; } = null!;
+        public virtual Categorie CategorieParent { get; set; } = null!;
 
         [InverseProperty(nameof(Categorie.CategorieParent))]
-        public List<Categorie> CategoriesEnfants { get; set; } = null!;
+        public virtual ICollection<Categorie> CategoriesEnfants { get; set; } = null!;
     }
 }

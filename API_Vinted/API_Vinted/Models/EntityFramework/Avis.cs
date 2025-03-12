@@ -29,10 +29,10 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDAcheteur))]
         [InverseProperty(nameof(Client.AvisMis))]
-        public Client Acheteur { get; set; } = null!;
+        public virtual Client Acheteur { get; set; } = null!;
 
         [ForeignKey(nameof(IDVendeur))]
         [InverseProperty(nameof(Client.AvisSur))]
-        public Client Vendeur { get; set; } = null!;
+        public virtual Client Vendeur { get; set; } = null!;
     }
 }

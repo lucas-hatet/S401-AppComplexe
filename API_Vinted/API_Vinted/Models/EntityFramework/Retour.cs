@@ -37,8 +37,7 @@ namespace API_Vinted.Models.EntityFramework
         public string MotifRetour { get; set; } = null!;
 
         [InverseProperty(nameof(Achat.Retours))]
-        public List<Achat> Achats { get; set; } = null!;
-        public Achat Achats { get; set; } = null!;
+        public ICollection<Achat> Achats { get; set; } = null!;
 
         [ForeignKey(nameof(IDOption))]
         [InverseProperty(nameof(OptionLivraison.Retours))]

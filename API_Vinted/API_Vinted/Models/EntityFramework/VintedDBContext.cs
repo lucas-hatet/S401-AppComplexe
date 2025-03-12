@@ -42,5 +42,8 @@ namespace API_Vinted.Models.EntityFramework
                .Property(b => b.Automatique)
                .HasDefaultValue(false);
         }
+
+
+        public DbSet<Article> Articles { get; set; }
     }
 }

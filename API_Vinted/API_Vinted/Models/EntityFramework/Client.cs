@@ -96,9 +96,6 @@ namespace API_Vinted.Models.EntityFramework
         public string RaisonSociale { get; set; }
         
 
-        [ForeignKey(nameof(IDVille))]
-        [InverseProperty(nameof(Ville.Adresses))]
-        public Ville Ville { get; set; } = null!;
 
         // Langue, ...
     }

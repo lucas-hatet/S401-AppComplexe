@@ -31,10 +31,10 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDClient))]
         [InverseProperty(nameof(Models.EntityFramework.Client.CartesBleues))]
-        public Client Client { get; set; } = null!;
+        public virtual Client Client { get; set; } = null!;
 
         [ForeignKey(nameof(IDTypeCarte))]
         [InverseProperty(nameof(Models.EntityFramework.TypeCarte.CartesBleues))]
-        public TypeCarte TypeCarte { get; set; } = null!;
+        public virtual TypeCarte TypeCarte { get; set; } = null!;
     }
 }
