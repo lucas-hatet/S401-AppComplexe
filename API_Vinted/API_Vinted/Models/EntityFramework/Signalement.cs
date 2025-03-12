@@ -6,7 +6,7 @@ namespace API_Vinted.Models.EntityFramework
 {
     [Table("signalement")]
     [PrimaryKey("IDClient","IDArticle")]
-    public class Signalement
+    public partial class Signalement
     {
         [Key]
         [Column("idclient")]

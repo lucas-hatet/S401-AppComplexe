@@ -2,7 +2,7 @@
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class Langue
+    public partial class Langue
     {
         [InverseProperty(nameof(Client.Langue))]
         public ICollection<Client> Clients { get; set; } = null!;

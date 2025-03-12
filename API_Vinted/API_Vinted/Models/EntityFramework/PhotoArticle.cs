@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("photo_article")]
-    public class PhotoArticle
+    public partial class PhotoArticle
     {
         [Key]
         [Column("idphoto")]

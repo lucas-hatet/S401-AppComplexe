@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class CompteBancaire
+    public partial class CompteBancaire
     {
         [Key]
         [Column("idcompte")]

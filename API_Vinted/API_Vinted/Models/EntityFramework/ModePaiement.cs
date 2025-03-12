@@ -2,7 +2,7 @@
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class ModePaiement
+    public partial class ModePaiement
     {
 
         [InverseProperty(nameof(Article.ModePaiement))]

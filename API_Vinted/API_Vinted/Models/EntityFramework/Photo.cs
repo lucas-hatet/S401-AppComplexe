@@ -7,7 +7,7 @@
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("photo")]
-    public class Photo
+    public partial class Photo
     {
 
         [InverseProperty(nameof(Client.Photo))]

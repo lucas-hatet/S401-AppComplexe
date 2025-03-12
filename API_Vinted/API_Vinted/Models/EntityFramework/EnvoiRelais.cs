@@ -1,6 +1,6 @@
 ﻿namespace API_Vinted.Models.EntityFramework
 {
-    public class EnvoiRelais
+    public partial class EnvoiRelais
     {
     }
 }

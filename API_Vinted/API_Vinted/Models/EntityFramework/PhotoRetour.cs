@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("photo_retour")]
-    public class PhotoRetour
+    public partial class PhotoRetour
     {
 
         [Key]

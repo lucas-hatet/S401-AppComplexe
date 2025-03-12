@@ -1,6 +1,6 @@
 ﻿namespace API_Vinted.Models.EntityFramework
 {
-    public class Etat
+    public partial class Etat
     {
     }
 }

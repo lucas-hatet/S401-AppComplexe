@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("type_carte")]
-    public class TypeCarte
+    public partial class TypeCarte
     {
         [InverseProperty(nameof(CarteBleue.TypeCarte))]
         public List<CarteBleue> CartesBleues { get; set; } = null!;

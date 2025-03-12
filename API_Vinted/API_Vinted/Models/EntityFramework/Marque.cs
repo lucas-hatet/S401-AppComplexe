@@ -2,7 +2,7 @@
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class Marque
+    public partial class Marque
     {
 
         [InverseProperty(nameof(Article.Marque))]

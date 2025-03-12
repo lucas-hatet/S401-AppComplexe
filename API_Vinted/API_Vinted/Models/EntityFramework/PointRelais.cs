@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("point_relais")]
-    public class PointRelais
+    public partial class PointRelais
     {
         [Key]
         [Column("idrelais")]

@@ -2,7 +2,7 @@
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class FormatColis
+    public partial class FormatColis
     {
 
         [InverseProperty(nameof(Article.FormatColis))]

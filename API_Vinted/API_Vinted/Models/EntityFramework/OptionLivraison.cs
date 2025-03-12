@@ -2,7 +2,7 @@
 
 namespace API_Vinted.Models.EntityFramework
 {
-    public class OptionLivraison
+    public partial class OptionLivraison
     {
 
         [InverseProperty(nameof(Achat.OptionLivraison))]
