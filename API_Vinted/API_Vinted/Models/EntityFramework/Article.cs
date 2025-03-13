@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace API_Vinted.Models.EntityFramework
 {
@@ -54,7 +55,6 @@ namespace API_Vinted.Models.EntityFramework
         [Column("nbvue")]
         [Required]
         public int NBVue { get; set; }
-
 
         [ForeignKey(nameof(IDVendeur))]
         [InverseProperty(nameof(Client.Articles))]

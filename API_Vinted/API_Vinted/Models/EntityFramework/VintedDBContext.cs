@@ -61,5 +61,7 @@ namespace API_Vinted.Models.EntityFramework
 
 
         public DbSet<Article> Articles { get; set; }
+        public DbSet<Client> Clients { get; set; }
+
     }
 }

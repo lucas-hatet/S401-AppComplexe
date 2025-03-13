@@ -1,32 +1,32 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace API_Vinted.Models.EntityFramework
 {
     [Table("client")]
     public partial class Client
     {
-
         [InverseProperty(nameof(Article.Vendeur))]
-        public virtual List<Article> Articles { get; set; } = null!;
+        public virtual ICollection<Article> Articles { get; set; } = null!;
 
         [InverseProperty(nameof(Avis.Vendeur))]
-        public virtual List<Avis> AvisSur { get; set; } = null!;
+        public virtual ICollection<Avis> AvisSur { get; set; } = null!;
 
         [InverseProperty(nameof(Avis.Acheteur))] 
-        public virtual List<Avis> AvisMis { get; set; } = null!;
+        public virtual ICollection<Avis> AvisMis { get; set; } = null!;
 
         [InverseProperty(nameof(CarteBleue.Client))]
-        public virtual List<CarteBleue> CartesBleues { get; set; } = null!;
+        public virtual ICollection<CarteBleue> CartesBleues { get; set; } = null!;
 
         [InverseProperty(nameof(Signalement.Client))]
-        public virtual List<Signalement> Signalements { get; set; } = null!;
+        public virtual ICollection<Signalement> Signalements { get; set; } = null!;
 
         [InverseProperty(nameof(CompteBancaire.Client))]
-        public virtual List<CompteBancaire> CompteBancaires { get; set; } = null!;
+        public virtual ICollection<CompteBancaire> CompteBancaires { get; set; } = null!;
 
         [InverseProperty(nameof(EnvoiRelais.Client))]
-        public virtual List<EnvoiRelais> EnvoisRelais { get; set; } = null!;
+        public virtual ICollection<EnvoiRelais> EnvoisRelais { get; set; } = null!;
 
 
         [Key]
