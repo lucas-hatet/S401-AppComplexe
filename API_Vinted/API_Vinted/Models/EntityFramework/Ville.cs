@@ -9,10 +9,10 @@ namespace API_Vinted.Models.EntityFramework
     public partial class Ville
     {
         [InverseProperty(nameof(Adresse.Ville))]
-        public ICollection<Adresse> Adresses { get; set; } = null!;
+        public virtual ICollection<Adresse> Adresses { get; set; } = null!;
 
         [InverseProperty(nameof(Client.Ville))]
-        public ICollection<Client> Clients { get; set; } = null!;
+        public virtual ICollection<Client> Clients { get; set; } = null!;
 
         [Key]
         [Column("idville")]
@@ -25,18 +25,18 @@ namespace API_Vinted.Models.EntityFramework
         [Required]
         [Column("idpays")]
         public int IDPays { get; set; }
-        
+
         [Required]
         [Column("nomville")]
         [StringLength(50)]
-        public string NomVille { get; set; }
+        public string NomVille { get; set; } = null!;
 
         [ForeignKey(nameof(IDPays))]
-        [InverseProperty(nameof(Pays.Villes))]
+        [InverseProperty(nameof(Models.EntityFramework.Pays.Villes))]
         public virtual Pays Pays { get; set; } = null!;
 
         [ForeignKey(nameof(CP))]
-        [InverseProperty(nameof(CodePostal.Villes))]
-        public CodePostal CodePostal { get; set; } = null!;
+        [InverseProperty(nameof(Models.EntityFramework.CodePostal.Villes))]
+        public virtual CodePostal CodePostal { get; set; } = null!;
     }
 }

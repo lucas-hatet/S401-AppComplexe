@@ -23,6 +23,6 @@ namespace API_Vinted.Models.EntityFramework
         public string? DescriptonFormat { get; set; } 
 
         [InverseProperty(nameof(Article.FormatColis))]
-        public ICollection<Article> Articles { get; set; } = null!;
+        public virtual ICollection<Article> Articles { get; set; } = null!;
     }
 }

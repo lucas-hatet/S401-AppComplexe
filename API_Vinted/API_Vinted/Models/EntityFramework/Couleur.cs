@@ -7,7 +7,7 @@ namespace API_Vinted.Models.EntityFramework
     public partial class Couleur
     {
         [InverseProperty(nameof(CouleurArticle.Couleur))]
-        public ICollection<CouleurArticle> CouleursArticle { get; set; } = null!;
+        public virtual ICollection<CouleurArticle> CouleursArticle { get; set; } = null!;
 
 
         [Key]

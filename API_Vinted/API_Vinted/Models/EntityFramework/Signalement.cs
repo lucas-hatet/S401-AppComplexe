@@ -23,11 +23,11 @@ namespace API_Vinted.Models.EntityFramework
         public DateTime? DateSignalement { get; set; }
 
         [ForeignKey(nameof(IDClient))]
-        [InverseProperty(nameof(Client.Signalements))]
-        public Client Client { get; set; } = null!;
+        [InverseProperty(nameof(Models.EntityFramework.Client.Signalements))]
+        public virtual Client Client { get; set; } = null!;
 
         [ForeignKey(nameof(IDArticle))]
-        [InverseProperty(nameof(Article.Signalements))]
+        [InverseProperty(nameof(Models.EntityFramework.Article.Signalements))]
         public virtual Article Article { get; set; } = null!;
     }
 }

@@ -11,7 +11,7 @@ namespace API_Vinted.Models.EntityFramework
     {
 
         [InverseProperty(nameof(Client.Photo))]
-        public List<Client> Clients { get; set; } = null!;
+        public virtual ICollection<Client> Clients { get; set; } = null!;
 
         [Key]
         [Column("idphoto")]

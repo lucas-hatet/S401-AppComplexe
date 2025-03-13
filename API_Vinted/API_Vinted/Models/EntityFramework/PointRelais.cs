@@ -8,7 +8,7 @@ namespace API_Vinted.Models.EntityFramework
     public partial class PointRelais
     {
         [InverseProperty(nameof(EnvoiRelais.PointRelais))]
-        public virtual List<EnvoiRelais> EnvoisRelais { get; set; } = null!;
+        public virtual ICollection<EnvoiRelais> EnvoisRelais { get; set; } = null!;
 
         [Key]
         [Column("idrelais")]

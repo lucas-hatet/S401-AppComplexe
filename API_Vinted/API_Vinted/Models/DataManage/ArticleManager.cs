@@ -24,13 +24,13 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<IEnumerable<Article>>> GetAllAsync()
         {
-            return await _dbContext.Articles.Include(a => a.Vendeur).ToListAsync();
+            
+            return await _dbContext.Articles.Include(a => a.Marque).ToListAsync();
         }
 
         public async Task<ActionResult<Article>> GetByIdAsync(int id)
         {
-            return await _dbContext.Articles.FirstOrDefaultAsync(a => a.IDArticle == id);
-            
+            return await _dbContext.Articles.Include(a => a.Marque).SingleAsync(a => a.IDArticle == id);
         }
 
         public Task UpdateAsync(Article entityToUpdate, Article entity)

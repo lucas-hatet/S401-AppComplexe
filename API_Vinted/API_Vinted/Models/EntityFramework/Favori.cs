@@ -14,11 +14,11 @@ namespace API_Vinted.Models.EntityFramework
         public int IDArticle { get; set; }
 
         [ForeignKey(nameof(IDClient))]
-        [InverseProperty(nameof(Client.Favoris))]
+        [InverseProperty(nameof(Models.EntityFramework.Client.Favoris))]
         public virtual Client Client { get; set; } = null!;
 
         [ForeignKey(nameof(IDArticle))]
-        [InverseProperty(nameof(Article.Favoris))]
+        [InverseProperty(nameof(Models.EntityFramework.Article.Favoris))]
         public virtual Article Article { get; set; } = null!;
     }
 }

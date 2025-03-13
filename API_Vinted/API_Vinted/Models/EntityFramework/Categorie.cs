@@ -19,7 +19,7 @@ namespace API_Vinted.Models.EntityFramework
 
 
         [InverseProperty(nameof(Article.Categorie))]
-        public ICollection<Article> Articles { get; set; } = null!;
+        public virtual ICollection<Article> Articles { get; set; } = null!;
 
 
         [InverseProperty(nameof(CaracteristiqueCategorie.Categorie))]

@@ -2,6 +2,8 @@ using API_Vinted.Models.DataManage;
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +22,13 @@ builder.Services.AddScoped<DataManager<Achat>>();
 builder.Services.AddScoped<DataManager<Article>>();
 builder.Services.AddScoped<DataManager<Client>>();
 builder.Services.AddScoped<IDataRepository<Article>, ArticleManager>();
+builder.Services.AddScoped<IDataRepository<Client>, ClientManager>();
 
+builder.Services.AddControllers()
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+        });
 
 var app = builder.Build();
 

@@ -8,10 +8,10 @@ namespace API_Vinted.Models.EntityFramework
     {
 
         [InverseProperty(nameof(Client.AdresseLivraison))]
-        public ICollection<Client> ClientAdresseLivraison { get; set; } = null!;
+        public virtual ICollection<Client> ClientAdresseLivraison { get; set; } = null!;
         
         [InverseProperty(nameof(Client.AdresseFacturation))]
-        public ICollection<Client> ClientAdresseFacturation { get; set; } = null!;
+        public virtual ICollection<Client> ClientAdresseFacturation { get; set; } = null!;
 
 
         [Key]

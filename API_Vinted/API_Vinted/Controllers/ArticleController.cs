@@ -21,6 +21,7 @@ namespace API_Vinted.Controllers
         public async Task<ActionResult<IEnumerable<Article>>> GetAllAsync()
         {
             return await _repository.GetAllAsync();
+            
         }
 
         [HttpGet("{id}")]

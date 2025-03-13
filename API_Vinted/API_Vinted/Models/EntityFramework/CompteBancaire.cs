@@ -26,7 +26,7 @@ namespace API_Vinted.Models.EntityFramework
 
 
         [ForeignKey(nameof(IDClient))]
-        [InverseProperty(nameof(Client.CompteBancaires))]
-        public Client Client { get; set; } = null!;
+        [InverseProperty(nameof(Models.EntityFramework.Client.CompteBancaires))]
+        public virtual Client Client { get; set; } = null!;
     }
 }

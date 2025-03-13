@@ -15,6 +15,6 @@ namespace API_Vinted.Models.EntityFramework
         public string? NomMarque { get; set; }
 
         [InverseProperty(nameof(Article.Marque))]
-        public ICollection<Article> Articles { get; set; } = null!;
+        public virtual ICollection<Article> Articles { get; set; } = null!;
     }
 }

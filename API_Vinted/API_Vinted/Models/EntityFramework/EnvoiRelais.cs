@@ -19,15 +19,15 @@ namespace API_Vinted.Models.EntityFramework
 
 
         [ForeignKey(nameof(IDClient))]
-        [InverseProperty(nameof(Client.EnvoisRelais))]
+        [InverseProperty(nameof(Models.EntityFramework.Client.EnvoisRelais))]
         public virtual Client Client { get; set; } = null!;
 
         [ForeignKey(nameof(IDMethodeEnvoi))]
-        [InverseProperty(nameof(MethodeEnvoi.EnvoisRelais))]
+        [InverseProperty(nameof(Models.EntityFramework.MethodeEnvoi.EnvoisRelais))]
         public virtual MethodeEnvoi MethodeEnvoi { get; set; } = null!;
 
         [ForeignKey(nameof(IDRelais))]
-        [InverseProperty(nameof(PointRelais.EnvoisRelais))]
+        [InverseProperty(nameof(Models.EntityFramework.PointRelais.EnvoisRelais))]
         public virtual PointRelais PointRelais { get; set; } = null!;
     }
 }

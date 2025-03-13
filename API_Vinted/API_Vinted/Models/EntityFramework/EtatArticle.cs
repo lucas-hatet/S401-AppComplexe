@@ -18,11 +18,11 @@ namespace API_Vinted.Models.EntityFramework
 
 
         [ForeignKey(nameof(IDArticle))]
-        [InverseProperty(nameof(Article.EtatsArticles))]
+        [InverseProperty(nameof(Models.EntityFramework.Article.EtatsArticles))]
         public virtual Article Article { get; set; } = null!;
 
         [ForeignKey(nameof(IDEtat))]
-        [InverseProperty(nameof(Etat.EtatsArticles))]
+        [InverseProperty(nameof(Models.EntityFramework.Etat.EtatsArticles))]
         public virtual Etat Etat { get; set; } = null!;
     }
 }

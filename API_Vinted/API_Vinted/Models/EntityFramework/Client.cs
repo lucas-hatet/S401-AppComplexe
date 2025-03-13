@@ -104,11 +104,11 @@ namespace API_Vinted.Models.EntityFramework
         
 
         [ForeignKey(nameof(IDVille))]
-        [InverseProperty(nameof(Ville.Clients))]
+        [InverseProperty(nameof(Models.EntityFramework.Ville.Clients))]
         public virtual Ville Ville { get; set; } = null!;
 
         [ForeignKey(nameof(IDLangue))]
-        [InverseProperty(nameof(Langue.Clients))]
+        [InverseProperty(nameof(Models.EntityFramework.Langue.Clients))]
         public virtual Langue Langue { get; set; } = null!;
 
         [ForeignKey(nameof(IDAdresseLivraison))]
@@ -120,11 +120,11 @@ namespace API_Vinted.Models.EntityFramework
         public virtual Adresse AdresseFacturation { get; set; } = null!;
 
         [ForeignKey(nameof(IDSexe))]
-        [InverseProperty(nameof(Sexe.Clients))]
+        [InverseProperty(nameof(Models.EntityFramework.Sexe.Clients))]
         public virtual Sexe Sexe { get; set; } = null!;
 
         [ForeignKey(nameof(IDPhoto))]
-        [InverseProperty(nameof(Photo.Clients))]
+        [InverseProperty(nameof(Models.EntityFramework.Photo.Clients))]
         public virtual Photo Photo { get; set; } = null!;
 
         [InverseProperty(nameof(Message.Expediteur))]

@@ -16,7 +16,7 @@ namespace API_Vinted.Models.EntityFramework
         public int? IDRetour { get; set; }
 
         [ForeignKey(nameof(IDRetour))]
-        [InverseProperty(nameof(Retour.Photos))]
-        public virtual Retour Retour { get; set; }
+        [InverseProperty(nameof(Models.EntityFramework.Retour.Photos))]
+        public virtual Retour Retour { get; set; } = null!;
     }
 }

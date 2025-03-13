@@ -24,12 +24,12 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<IEnumerable<Client>>> GetAllAsync()
         {
-            return await _dbContext.Clients.Include(c => c.Articles).ToListAsync();
+            return await _dbContext.Clients.ToListAsync();
         }
 
         public async Task<ActionResult<Client>> GetByIdAsync(int id)
         {
-            return await _dbContext.Clients.FirstOrDefaultAsync(a => a.IDClient == id);
+            return await _dbContext.Clients.Include(c => c.Articles).FirstOrDefaultAsync(a => a.IDClient == id);
             
         }
 

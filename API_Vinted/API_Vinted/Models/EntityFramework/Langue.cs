@@ -15,6 +15,6 @@ namespace API_Vinted.Models.EntityFramework
         public string Libellelangue { get; set; } = null!;
 
         [InverseProperty(nameof(Client.Langue))]
-        public ICollection<Client> Clients { get; set; } = null!;
+        public virtual ICollection<Client> Clients { get; set; } = null!;
     }
 }

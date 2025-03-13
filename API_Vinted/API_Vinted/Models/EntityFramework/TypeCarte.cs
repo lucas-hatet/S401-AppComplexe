@@ -8,7 +8,7 @@ namespace API_Vinted.Models.EntityFramework
     public partial class TypeCarte
     {
         [InverseProperty(nameof(CarteBleue.TypeCarte))]
-        public List<CarteBleue> CartesBleues { get; set; } = null!;
+        public virtual ICollection<CarteBleue> CartesBleues { get; set; } = null!;
         [Key]
         [Column("idtypecarte")]
         public int IDTypeCarte { get; set; }

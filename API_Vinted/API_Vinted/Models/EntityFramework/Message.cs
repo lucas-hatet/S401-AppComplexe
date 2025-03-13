@@ -35,7 +35,7 @@ namespace API_Vinted.Models.EntityFramework
         public virtual Client Destinataire { get; set; } = null!;
 
         [ForeignKey(nameof(IDArticle))]
-        [InverseProperty(nameof(Article.Messages))]
+        [InverseProperty(nameof(Models.EntityFramework.Article.Messages))]
         public virtual Article Article { get; set; } = null!;
     }
 }

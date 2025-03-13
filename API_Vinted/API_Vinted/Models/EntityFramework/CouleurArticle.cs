@@ -18,11 +18,11 @@ namespace API_Vinted.Models.EntityFramework
 
 
         [ForeignKey(nameof(IDCouleur))]
-        [InverseProperty(nameof(Couleur.CouleursArticle))]
+        [InverseProperty(nameof(Models.EntityFramework.Couleur.CouleursArticle))]
         public virtual Couleur Couleur { get; set; } = null!;
 
         [ForeignKey(nameof(IDArticle))]
-        [InverseProperty(nameof(Article.CouleursArticle))]
+        [InverseProperty(nameof(Models.EntityFramework.Article.CouleursArticle))]
         public virtual Article Article { get; set; } = null!;
 
 

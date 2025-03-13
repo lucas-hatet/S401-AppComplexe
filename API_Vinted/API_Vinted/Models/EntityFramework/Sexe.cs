@@ -7,7 +7,7 @@ namespace API_Vinted.Models.EntityFramework
     public partial class Sexe
     {
         [InverseProperty(nameof(Client.Sexe))]
-        public List<Client> Clients { get; set; } = null!;
+        public virtual ICollection<Client> Clients { get; set; } = null!;
 
         [Key]
         [Column("idsexe")]
