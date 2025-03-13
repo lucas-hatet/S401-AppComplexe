@@ -117,14 +117,14 @@ namespace API_Vinted.Migrations
                 schema: "public",
                 columns: table => new
                 {
-                    IDLangue = table.Column<int>(type: "integer", nullable: false)
+                    idLangue = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:IdentitySequenceOptions", "'1', '1', '', '', 'False', '1'")
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     libellelangue = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_langue", x => x.IDLangue);
+                    table.PrimaryKey("PK_langue", x => x.idLangue);
                 });
 
             migrationBuilder.CreateTable(
@@ -502,7 +502,7 @@ namespace API_Vinted.Migrations
                         column: x => x.idlangue,
                         principalSchema: "public",
                         principalTable: "langue",
-                        principalColumn: "IDLangue");
+                        principalColumn: "idLangue");
                     table.ForeignKey(
                         name: "FK_client_photo_idphoto",
                         column: x => x.idphoto,

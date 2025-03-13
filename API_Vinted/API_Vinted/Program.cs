@@ -2,6 +2,7 @@ using API_Vinted.Models.DataManage;
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -13,7 +14,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<VintedDBContext>(options =>
-  options.UseNpgsql(builder.Configuration.GetConnectionString("FilmRatingsDBContextRemote")));
+  options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking).UseNpgsql(builder.Configuration.GetConnectionString("FilmRatingsDBContextRemote")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -29,7 +30,6 @@ builder.Services.AddControllers()
         {
             options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         });
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

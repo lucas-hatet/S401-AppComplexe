@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API_Vinted.Migrations
 {
     [DbContext(typeof(VintedDBContext))]
-    [Migration("20250312214257_CreationBDVinted")]
+    [Migration("20250313163044_CreationBDVinted")]
     partial class CreationBDVinted
     {
         /// <inheritdoc />
@@ -679,7 +679,7 @@ namespace API_Vinted.Migrations
                     b.Property<int>("IDLangue")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("IDLangue");
+                        .HasColumnName("idLangue");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDLangue"));
                     NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDLangue"), 1L, null, null, null, null, null);

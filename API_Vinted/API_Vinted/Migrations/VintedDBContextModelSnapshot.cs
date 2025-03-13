@@ -676,7 +676,7 @@ namespace API_Vinted.Migrations
                     b.Property<int>("IDLangue")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("IDLangue");
+                        .HasColumnName("idLangue");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IDLangue"));
                     NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("IDLangue"), 1L, null, null, null, null, null);
