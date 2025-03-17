@@ -7,35 +7,39 @@ namespace API_Vinted.Models.DataManage
 {
     public class ClientManager : IDataRepository<Client>
     {
-        private VintedDBContext _dbContext;
-        public ClientManager(VintedDBContext dbContext)
+        private VintedDBContext _context;
+        public ClientManager(VintedDBContext context)
         {
-            _dbContext = dbContext;
+            _context = context;
         }
-        public Task AddAsync(Client entity)
+        public async Task AddAsync(Client entity)
         {
-            throw new NotImplementedException();
+            await _context.Clients.AddAsync(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public Task DeleteAsync(Client entity)
+        public async Task DeleteAsync(Client entity)
         {
-            throw new NotImplementedException();
+            _context.Clients.Remove(entity);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<ActionResult<IEnumerable<Client>>> GetAllAsync()
         {
-            return await _dbContext.Clients.Include(c => c.Articles).ToListAsync();
+            return await _context.Clients.ToListAsync();
         }
 
         public async Task<ActionResult<Client>> GetByIdAsync(int id)
         {
-            return await _dbContext.Clients.Include(c => c.Articles).FirstOrDefaultAsync(a => a.IDClient == id);
+            return await _context.Clients.FirstOrDefaultAsync(a => a.IDClient == id);
             
         }
 
-        public Task UpdateAsync(Client entityToUpdate, Client entity)
+        public async Task UpdateAsync(Client entityToUpdate, Client entity)
         {
-            throw new NotImplementedException();
+            _context.Entry(entityToUpdate).State = EntityState.Modified;
+            entityToUpdate.Pseudo = entity.Pseudo;
+            await _context.SaveChangesAsync();
         }
     }
 }

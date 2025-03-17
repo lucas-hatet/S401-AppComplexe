@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<VintedDBContext>(options =>
-  options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking).UseNpgsql(builder.Configuration.GetConnectionString("FilmRatingsDBContextRemote")));
+  options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking).UseNpgsql(builder.Configuration.GetConnectionString("VintedDBContextRemote")));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
