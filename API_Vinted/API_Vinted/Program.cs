@@ -25,6 +25,18 @@ builder.Services.AddScoped<DataManager<Client>>();
 builder.Services.AddScoped<IDataRepository<Article>, ArticleManager>();
 builder.Services.AddScoped<IDataRepository<Client>, ClientManager>();
 
+var MyAllowSpecificOrigins = "_MyAllowSubdomainPolicy";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin();
+                      });
+});
+
+
 builder.Services.AddControllers()
         .AddJsonOptions(options =>
         {
@@ -42,6 +54,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.MapControllers();
 

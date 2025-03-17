@@ -24,7 +24,6 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<IEnumerable<Article>>> GetAllAsync()
         {
-            
             return await _dbContext.Articles.Include(a => a.Vendeur).ToListAsync();
         }
 
