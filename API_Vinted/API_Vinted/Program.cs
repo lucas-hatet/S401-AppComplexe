@@ -22,6 +22,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<DataManager<Achat>>();
 builder.Services.AddScoped<DataManager<Article>>();
 builder.Services.AddScoped<DataManager<Client>>();
+builder.Services.AddScoped<IDataRepository<Marque>, MarqueManager>();
 builder.Services.AddScoped<IDataRepository<Article>, ArticleManager>();
 builder.Services.AddScoped<IDataRepository<Client>, ClientManager>();
 

@@ -29,7 +29,7 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<Article>> GetByIdAsync(int id)
         {
-            return await _dbContext.Articles.Include(a => a.Vendeur).FirstOrDefaultAsync(a => a.IDArticle == id);
+            return await _dbContext.Articles.Include(a => a.Vendeur).Include(a => a.Marque).FirstOrDefaultAsync(a => a.IDArticle == id);
         }
 
         public Task UpdateAsync(Article entityToUpdate, Article entity)
