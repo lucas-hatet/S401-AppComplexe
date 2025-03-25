@@ -17,5 +17,9 @@ namespace API_Vinted.Models.EntityFramework
         [ForeignKey(nameof(IDArticle))]
         [InverseProperty(nameof(Models.EntityFramework.Article.Photos))]
         public virtual Article Article { get; set; } = null!;
+
+        [ForeignKey(nameof(IDPhoto))]
+        [InverseProperty(nameof(Models.EntityFramework.Photo.PhotoArticles))]
+        public virtual Photo Photo { get; set; } = null!;
     }
 }

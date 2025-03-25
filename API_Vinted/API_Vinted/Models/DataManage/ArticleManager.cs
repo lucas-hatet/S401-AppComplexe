@@ -25,12 +25,12 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<IEnumerable<Article>>> GetAllAsync()
         {
-            return await _dbContext.Articles.Include(a => a.Vendeur).Include(a => a.Marque).ToListAsync();
+            return await _dbContext.Articles.Include(a => a.Vendeur).Include(a => a.Marque).Include(a => a.Photos).ThenInclude(pa => pa.Photo).ToListAsync();
         }
 
         public async Task<ActionResult<Article>> GetByIdAsync(int id)
         {
-            return await _dbContext.Articles.Include(a => a.Vendeur).Include(a => a.Marque).Include(a => a.CaracteristiquesArticle).FirstOrDefaultAsync(a => a.IDArticle == id);
+            return await _dbContext.Articles.Include(a => a.Vendeur).Include(a => a.Marque).Include(a => a.Photos).ThenInclude(pa => pa.Photo).Include(a => a.CaracteristiquesArticle).FirstOrDefaultAsync(a => a.IDArticle == id);
         }
 
         public async Task<ActionResult<IEnumerable<Article>>> GetByIdCategorieAsync(int id)
