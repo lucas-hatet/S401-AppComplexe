@@ -38,7 +38,7 @@ namespace API_Vinted.Models.DataManage
             List<Article> list = new List<Article>();
             List<int> listID = await GetAllCategorieChildrenByIdAsync(id, []);
             foreach (int idCategorie in listID) {
-                list = list.Concat(await _dbContext.Articles.Include(a => a.Vendeur).Include(a => a.Marque).Include(a => a.Photos).ThenInclude(pa => pa.Photo).Include(a => a.CaracteristiquesArticle).Include(a => a.Categorie).Where(a => a.Categorie.IDCategorie == idCategorie).ToListAsync()).ToList();
+                list = list.Concat(await _dbContext.Articles.Include(a => a.Vendeur).Include(a => a.Marque).Include(a => a.Photos).ThenInclude(pa => pa.Photo).Include(a => a.CaracteristiquesArticle).Where(a => a.Categorie.IDCategorie == idCategorie).ToListAsync()).ToList();
             };
             return list;
 

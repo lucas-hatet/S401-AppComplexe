@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\datamanage\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\datamanage\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\avis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\avis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\datamanage\\articlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +23,28 @@
       "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\vinteddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\caracteristiquecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\caracteristiquecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\photoarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\photoarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\pays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\pays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\datamanage\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\datamanage\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\avis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\avis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\caracteristiquecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\caracteristiquecategorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -183,18 +195,6 @@
       "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\pointrelais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\photoarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\photoarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\pays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\pays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|c:\\users\\fetres\\desktop\\lucas-hatet\\s401-appcomplexe\\api_vinted\\api_vinted\\models\\entityframework\\cartebleue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}|API_Vinted\\API_Vinted.csproj|solutionrelative:api_vinted\\models\\entityframework\\cartebleue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -206,43 +206,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ArticleManager.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\DataManage\\ArticleManager.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\DataManage\\ArticleManager.cs",
               "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\DataManage\\ArticleManager.cs",
               "RelativeToolTip": "API_Vinted\\Models\\DataManage\\ArticleManager.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwB8AAABbAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwC4AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:32:00.361Z"
+              "WhenOpened": "2025-03-13T16:32:00.361Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "VintedDBContext.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
               "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
               "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\VintedDBContext.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAmwDEAAAAnAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAuwD8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T07:10:23.151Z"
+              "WhenOpened": "2025-03-12T07:10:23.151Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "ClientManager.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\DataManage\\ClientManager.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\DataManage\\ClientManager.cs",
@@ -255,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "CaracteristiqueCategorie.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CaracteristiqueCategorie.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CaracteristiqueCategorie.cs",
@@ -267,19 +261,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Program.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Program.cs",
               "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Program.cs",
               "RelativeToolTip": "API_Vinted\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAAAhAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T15:08:44.462Z"
+              "WhenOpened": "2025-03-12T15:08:44.462Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Avis.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Avis.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Avis.cs",
@@ -291,31 +286,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Article.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Article.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Article.cs",
               "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Article.cs",
               "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Article.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAwGUAAAAAAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAADwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T08:25:18.242Z"
+              "WhenOpened": "2025-03-20T08:25:18.242Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Pays.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Pays.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:29:58.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PhotoArticle.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:30:25.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ArticleController.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Controllers\\ArticleController.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Controllers\\ArticleController.cs",
               "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Controllers\\ArticleController.cs",
               "RelativeToolTip": "API_Vinted\\Controllers\\ArticleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAfAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T15:29:50.953Z"
+              "WhenOpened": "2025-03-12T15:29:50.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Photo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T07:30:08.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MarqueManager.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\DataManage\\MarqueManager.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\DataManage\\MarqueManager.cs",
@@ -323,11 +367,12 @@
               "RelativeToolTip": "API_Vinted\\Models\\DataManage\\MarqueManager.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAowCQAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T08:22:46.159Z"
+              "WhenOpened": "2025-03-19T08:22:46.159Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "MarqueController.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Controllers\\MarqueController.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Controllers\\MarqueController.cs",
@@ -335,11 +380,12 @@
               "RelativeToolTip": "API_Vinted\\Controllers\\MarqueController.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwBsAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T08:10:51.319Z"
+              "WhenOpened": "2025-03-19T08:10:51.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Controllers\\WeatherForecastController.cs",
@@ -351,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "IDataRepository.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\Repository\\IDataRepository.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\Repository\\IDataRepository.cs",
@@ -363,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "BaseController.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Controllers\\BaseController.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Controllers\\BaseController.cs",
@@ -371,11 +417,12 @@
               "RelativeToolTip": "API_Vinted\\Controllers\\BaseController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T14:49:13.242Z"
+              "WhenOpened": "2025-03-12T14:49:13.242Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "AchatController.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Controllers\\AchatController.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Controllers\\AchatController.cs",
@@ -387,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ArticleControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_VintedTests\\Controllers\\ArticleControllerTests.cs",
               "RelativeDocumentMoniker": "API_VintedTests\\Controllers\\ArticleControllerTests.cs",
@@ -399,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Marque.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Marque.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Marque.cs",
@@ -411,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "ClientController.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Controllers\\ClientController.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Controllers\\ClientController.cs",
@@ -419,11 +466,12 @@
               "RelativeToolTip": "API_Vinted\\Controllers\\ClientController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwBAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T15:35:57.642Z"
+              "WhenOpened": "2025-03-12T15:35:57.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "EnvoiRelais.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\EnvoiRelais.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\EnvoiRelais.cs",
@@ -435,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Langue.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Langue.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Langue.cs",
@@ -447,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Etat.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Etat.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Etat.cs",
@@ -459,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "DataManager.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\DataManage\\DataManager.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\DataManage\\DataManager.cs",
@@ -467,11 +515,12 @@
               "RelativeToolTip": "API_Vinted\\Models\\DataManage\\DataManager.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T13:00:49.891Z"
+              "WhenOpened": "2025-03-12T13:00:49.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Couleur.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Couleur.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Couleur.cs",
@@ -483,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Client.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Client.cs",
@@ -495,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Achat.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Achat.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Achat.cs",
@@ -507,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "Favori.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Favori.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Favori.cs",
@@ -519,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "OptionLivraison.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\OptionLivraison.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\OptionLivraison.cs",
@@ -531,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "FormatColis.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\FormatColis.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\FormatColis.cs",
@@ -543,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "EtatArticle.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\EtatArticle.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\EtatArticle.cs",
@@ -555,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "CouleurArticle.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CouleurArticle.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CouleurArticle.cs",
@@ -567,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "CompteBancaire.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CompteBancaire.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CompteBancaire.cs",
@@ -579,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "MethodeEnvoi.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\MethodeEnvoi.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\MethodeEnvoi.cs",
@@ -591,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "ModePaiement.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\ModePaiement.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\ModePaiement.cs",
@@ -603,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "TypeCarte.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\TypeCarte.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\TypeCarte.cs",
@@ -615,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "Adresse.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Adresse.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Adresse.cs",
@@ -627,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Message.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Message.cs",
@@ -639,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "Categorie.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Categorie.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Categorie.cs",
@@ -651,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "CodePostal.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\CodePostal.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\CodePostal.cs",
@@ -659,11 +708,12 @@
               "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\CodePostal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T07:25:48.222Z"
+              "WhenOpened": "2025-03-12T07:25:48.222Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Signalement.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Signalement.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Signalement.cs",
@@ -675,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "Retour.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Retour.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Retour.cs",
@@ -687,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "PhotoRetour.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PhotoRetour.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\PhotoRetour.cs",
@@ -699,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\appsettings.json",
               "RelativeDocumentMoniker": "API_Vinted\\appsettings.json",
@@ -711,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Ville.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Ville.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Ville.cs",
@@ -719,11 +769,12 @@
               "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Ville.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T07:31:35.647Z"
+              "WhenOpened": "2025-03-12T07:31:35.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "Valeur.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Valeur.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Valeur.cs",
@@ -735,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "Sexe.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Sexe.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Sexe.cs",
@@ -747,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "PointRelais.cs",
               "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PointRelais.cs",
               "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\PointRelais.cs",
@@ -756,42 +807,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T08:04:32.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "PhotoArticle.cs",
-              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
-              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
-              "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
-              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\PhotoArticle.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T07:30:25.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Photo.cs",
-              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Photo.cs",
-              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Photo.cs",
-              "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Photo.cs",
-              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Photo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T07:30:08.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Pays.cs",
-              "DocumentMoniker": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Pays.cs",
-              "RelativeDocumentMoniker": "API_Vinted\\Models\\EntityFramework\\Pays.cs",
-              "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\EntityFramework\\Pays.cs",
-              "RelativeToolTip": "API_Vinted\\Models\\EntityFramework\\Pays.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T07:29:58.763Z"
             },
             {
               "$type": "Document",

@@ -34,11 +34,10 @@ namespace API_Vinted.Controllers
 
         [HttpGet]
         [Route("[action]/{id}")]
-        public async Task<ActionResult<Categorie>> GetByIdCategorieAsync(int id)
+        public async Task<ActionResult<IEnumerable<Article>>> GetByIdCategorieAsync(int id)
         {
-            var entity = await _repository.GetByIdCategorieAsync(id);
-            if (entity == null) return NotFound();
-            return Ok(entity);
+            return await _repository.GetByIdCategorieAsync(id);
+            
         }
 
         [HttpPost]
