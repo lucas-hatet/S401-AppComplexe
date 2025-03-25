@@ -10,9 +10,9 @@ namespace API_Vinted.Controllers
     [Route("api/[controller]")]
     public class CategorieController : ControllerBase
     {
-        private readonly IDataRepository<Categorie> _repository;
+        private readonly CategorieManager _repository;
 
-        public CategorieController(IDataRepository<Categorie> repository)
+        public CategorieController(CategorieManager repository)
         {
             _repository = repository;
         }
@@ -31,6 +31,7 @@ namespace API_Vinted.Controllers
             if (entity == null) return NotFound();
             return Ok(entity);
         }
+
 
         [HttpPost]
         public async Task<ActionResult> AddAsync([FromBody] Categorie entity)

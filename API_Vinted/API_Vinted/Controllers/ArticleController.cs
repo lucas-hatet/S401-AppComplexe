@@ -10,9 +10,9 @@ namespace API_Vinted.Controllers
     [Route("api/[controller]")]
     public class ArticleController : ControllerBase
     {
-        private readonly IDataRepository<Article> _repository;
+        private readonly ArticleManager _repository;
 
-        public ArticleController(IDataRepository<Article> repository)
+        public ArticleController(ArticleManager repository)
         {
             _repository = repository;
         }
@@ -28,6 +28,15 @@ namespace API_Vinted.Controllers
         public async Task<ActionResult<Article>> GetByIdAsync(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
+            if (entity == null) return NotFound();
+            return Ok(entity);
+        }
+
+        [HttpGet]
+        [Route("[action]/{id}")]
+        public async Task<ActionResult<Categorie>> GetByIdCategorieAsync(int id)
+        {
+            var entity = await _repository.GetByIdCategorieAsync(id);
             if (entity == null) return NotFound();
             return Ok(entity);
         }

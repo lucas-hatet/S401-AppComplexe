@@ -37,6 +37,7 @@ namespace API_Vinted.Models.DataManage
             throw new NotImplementedException();
         }
 
+        
         public Task UpdateAsync(Categorie entityToUpdate, Categorie entity)
         {
             throw new NotImplementedException();
