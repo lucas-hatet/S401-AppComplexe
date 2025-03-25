@@ -206,8 +206,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -240,7 +248,7 @@
               "RelativeDocumentMoniker": "API_Vinted\\Models\\DataManage\\ClientManager.cs",
               "ToolTip": "C:\\Users\\fetres\\Desktop\\lucas-hatet\\S401-AppComplexe\\API_Vinted\\API_Vinted\\Models\\DataManage\\ClientManager.cs",
               "RelativeToolTip": "API_Vinted\\Models\\DataManage\\ClientManager.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowCEAAACHAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowB8AAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T16:34:29.712Z",
               "EditorCaption": ""
@@ -796,10 +804,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T07:24:47.099Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
