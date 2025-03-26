@@ -1,6 +1,8 @@
-﻿using API_Vinted.Models.DataManage;
+﻿using API_Vinted.Models;
+using API_Vinted.Models.DataManage;
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol.Core.Types;
 
@@ -41,6 +43,7 @@ namespace API_Vinted.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = Policies.User)]
         public async Task<ActionResult> AddAsync([FromBody] Article entity)
         {
             await _repository.AddAsync(entity);
