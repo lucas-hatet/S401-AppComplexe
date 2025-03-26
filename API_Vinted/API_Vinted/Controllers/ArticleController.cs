@@ -43,7 +43,6 @@ namespace API_Vinted.Controllers
         }
 
         [HttpPost]
-        [Authorize(Policy = Policies.User)]
         public async Task<ActionResult> AddAsync([FromBody] Article entity)
         {
             await _repository.AddAsync(entity);
