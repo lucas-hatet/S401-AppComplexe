@@ -34,10 +34,10 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<Categorie>> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Categories.Include(a => a.CategoriesEnfants).FirstOrDefaultAsync(a => a.IDCategorie == id);
         }
 
-        
+
         public Task UpdateAsync(Categorie entityToUpdate, Categorie entity)
         {
             throw new NotImplementedException();
