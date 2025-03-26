@@ -65,6 +65,7 @@ namespace API_Vinted.Models.EntityFramework
         public DbSet<Client> Clients { get; set; }
         public DbSet<API_Vinted.Models.EntityFramework.Marque> Marque { get; set; } = default!;
         public DbSet<Categorie> Categories { get; set; }
+        public DbSet<Caracteristique> Caracteristiques { get; set; }
 
 
 

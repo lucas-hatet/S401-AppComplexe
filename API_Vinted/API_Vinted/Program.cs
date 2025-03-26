@@ -29,11 +29,12 @@ builder.Services.AddScoped<DataManager<Client>>();
 builder.Services.AddScoped<DataManager<Categorie>>();
 builder.Services.AddScoped<ArticleManager>();
 builder.Services.AddScoped<CategorieManager>();
-
+builder.Services.AddScoped<DataManager<Caracteristique>>();
 builder.Services.AddScoped<IDataRepository<Marque>, MarqueManager>();
 builder.Services.AddScoped<IDataRepository<Article>, ArticleManager>();
 builder.Services.AddScoped<IDataRepository<Client>, ClientManager>();
 builder.Services.AddScoped<IDataRepository<Categorie>, CategorieManager>();
+builder.Services.AddScoped<IDataRepository<Caracteristique>, CaracteristiqueManager>();
 
 
 
