@@ -38,6 +38,7 @@ builder.Services.AddScoped<IDataRepository<Client>, ClientManager>();
 builder.Services.AddScoped<IDataRepository<Categorie>, CategorieManager>();
 builder.Services.AddScoped<IDataRepository<Caracteristique>, CaracteristiqueManager>();
 builder.Services.AddScoped<IDataRepository<FormatColis>, FormatColisManager>();
+builder.Services.AddScoped<IDataRepository<Couleur>, CouleurManager>();
 
 
 
