@@ -1,8 +1,6 @@
-﻿using API_Vinted.Models;
-using API_Vinted.Models.DataManage;
+﻿using API_Vinted.Models.DataManage;
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol.Core.Types;
 
@@ -10,51 +8,39 @@ namespace API_Vinted.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ArticleController : ControllerBase
+    public class CouleurController : ControllerBase
     {
-        private readonly ArticleManager _repository;
+        private readonly IDataRepository<Couleur> _repository;
 
-        public ArticleController(ArticleManager repository)
+        public CouleurController(IDataRepository<Couleur> repository)
         {
             _repository = repository;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Article>>> GetAllAsync()
+        public async Task<ActionResult<IEnumerable<Couleur>>> GetAllAsync()
         {
             return await _repository.GetAllAsync();
             
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Article>> GetByIdAsync(int id)
+        public async Task<ActionResult<Couleur>> GetByIdAsync(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
             if (entity == null) return NotFound();
             return Ok(entity);
         }
 
-        [HttpGet]
-        [Route("[action]/{id}")]
-        public async Task<ActionResult<IEnumerable<Article>>> GetByIdCategorieAsync(int id)
-        {
-            return await _repository.GetByIdCategorieAsync(id);
-            
-        }
-
         [HttpPost]
-        public async Task<ActionResult<Article>> AddAsync([FromBody] Article entity)
+        public async Task<ActionResult> AddAsync([FromBody] Couleur entity)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
             await _repository.AddAsync(entity);
-            return CreatedAtAction("GetByIdAsync", new { id = entity.IDArticle }, entity); 
+            return CreatedAtAction(nameof(GetByIdAsync), new { id = 1 /* Mettre l'ID de l'entité ici */ }, entity);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateAsync(int id, [FromBody] Article entity)
+        public async Task<ActionResult> UpdateAsync(int id, [FromBody] Couleur entity)
         {
             var entityToUpdate = await _repository.GetByIdAsync(id);
             if (entityToUpdate == null) return NotFound();
