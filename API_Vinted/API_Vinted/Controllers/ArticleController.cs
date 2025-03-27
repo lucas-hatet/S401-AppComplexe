@@ -33,10 +33,14 @@ namespace API_Vinted.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddAsync([FromBody] Article entity)
+        public async Task<ActionResult<Article>> AddAsync([FromBody] Article entity)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             await _repository.AddAsync(entity);
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = 1 /* Mettre l'ID de l'entité ici */ }, entity);
+            return CreatedAtAction("GetByIdAsync", new { id = entity.IDArticle }, entity); 
         }
 
         [HttpPut("{id}")]

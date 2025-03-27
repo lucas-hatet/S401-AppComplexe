@@ -32,14 +32,15 @@ namespace API_Vinted.Models.EntityFramework
                 var idProperty = entity.GetProperties()
                     .FirstOrDefault(p => p.Name.StartsWith("ID") && p.ClrType == typeof(int));
 
-                if (idProperty != null)
-                {
-                    modelBuilder.Entity(entity.ClrType)
-                        .Property(idProperty.Name)
-                        .UseIdentityColumn() // Commence à 1, incrémente de 1
-                        .HasIdentityOptions(startValue: 1, incrementBy: 1); // Définit le début à 1 et incrémente de 1
+                // décommenter pour upload script de base
+                //if (idProperty != null)
+                //{
+                //    modelBuilder.Entity(entity.ClrType)
+                //        .Property(idProperty.Name)
+                //        .UseIdentityColumn() // Commence à 1, incrémente de 1
+                //        .HasIdentityOptions(startValue: 1, incrementBy: 1); // Définit le début à 1 et incrémente de 1
 
-                }
+                //}
             }
 
             modelBuilder.Entity<Achat>()

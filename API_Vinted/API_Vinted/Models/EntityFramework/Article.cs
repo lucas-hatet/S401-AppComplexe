@@ -8,7 +8,7 @@ namespace API_Vinted.Models.EntityFramework
     public partial class Article
     {
         [InverseProperty(nameof(EtatArticle.Article))]
-        public virtual List<EtatArticle> EtatsArticles { get; set; } = null!;
+        public virtual List<EtatArticle>? EtatsArticles { get; set; } = null!;
 
         [Key]
         [Column("idarticle")]
@@ -58,44 +58,44 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDVendeur))]
         [InverseProperty(nameof(Client.Articles))]
-        public virtual Client Vendeur { get; set; } = null!;
+        public virtual Client? Vendeur { get; set; } = null!;
 
         [ForeignKey(nameof(NumTransaction))]
         [InverseProperty(nameof(Models.EntityFramework.Achat.Articles))]
-        public virtual Achat Achat { get; set; } = null!;
+        public virtual Achat? Achat { get; set; } = null!;
 
         [ForeignKey(nameof(IDCategorie))]
         [InverseProperty(nameof(Models.EntityFramework.Categorie.Articles))]
-        public virtual Categorie Categorie { get; set; } = null!;
+        public virtual Categorie? Categorie { get; set; } = null!;
 
         [ForeignKey(nameof(IDModePaiement))]
         [InverseProperty(nameof(Models.EntityFramework.ModePaiement.Articles))]
-        public virtual ModePaiement ModePaiement { get; set; } = null!;
+        public virtual ModePaiement? ModePaiement { get; set; } = null!;
 
         [ForeignKey(nameof(IDFormat))]
         [InverseProperty(nameof(Models.EntityFramework.FormatColis.Articles))]
-        public virtual FormatColis FormatColis { get; set; } = null!;
+        public virtual FormatColis? FormatColis { get; set; } = null!;
 
         [ForeignKey(nameof(IDMarque))]
         [InverseProperty(nameof(Models.EntityFramework.Marque.Articles))]
-        public virtual Marque Marque { get; set; } = null!;
+        public virtual Marque? Marque { get; set; } = null!;
 
         [InverseProperty(nameof(Signalement.Article))]
-        public virtual ICollection<Signalement> Signalements { get; set; } = null!;
+        public virtual ICollection<Signalement>? Signalements { get; set; } = null!;
 
         [InverseProperty(nameof(CaracteristiqueArticle.Article))]
-        public virtual ICollection<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
+        public virtual ICollection<CaracteristiqueArticle>? CaracteristiquesArticle { get; set; } = null!;
 
         [InverseProperty(nameof(PhotoArticle.Article))]
-        public virtual ICollection<PhotoArticle> Photos { get; set; } = null!;
+        public virtual ICollection<PhotoArticle>? Photos { get; set; } = null!;
         
         [InverseProperty(nameof(Message.Article))]
-        public virtual ICollection<Message> Messages { get; set; } = null!;
+        public virtual ICollection<Message>? Messages { get; set; } = null!;
 
         [InverseProperty(nameof(Favori.Article))]
-        public virtual ICollection<Favori> Favoris { get; set; } = null!;
+        public virtual ICollection<Favori>? Favoris { get; set; } = null!;
 
         [InverseProperty(nameof(CouleurArticle.Article))]
-        public virtual ICollection<CouleurArticle> CouleursArticle { get; set; } = null!;
+        public virtual ICollection<CouleurArticle>? CouleursArticle { get; set; } = null!;
     }
 }
