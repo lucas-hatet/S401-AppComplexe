@@ -11,9 +11,10 @@ namespace API_Vinted.Models.DataManage
         {
             _dbContext = dbContext;
         }
-        public Task AddAsync(Adresse entity)
+        public async Task AddAsync(Adresse entity)
         {
-            throw new NotImplementedException();
+            await _dbContext.Adresses.AddAsync(entity);
+            await _dbContext.SaveChangesAsync();
         }
 
         public Task DeleteAsync(Adresse entity)

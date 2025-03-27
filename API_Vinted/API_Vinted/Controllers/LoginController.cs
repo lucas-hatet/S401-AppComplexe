@@ -1,4 +1,5 @@
 ﻿using API_Vinted.Models;
+using API_Vinted.Models.EntityFramework;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -14,14 +15,21 @@ namespace API_Vinted.Controllers
     public class LoginController : ControllerBase
     {
         private readonly IConfiguration _config;
+        private PasswordManager passwordManager;
+        private VintedDBContext _dbContext;
         private List<User> appUsers = new List<User>
         {
-            new User { FullName = "Simon FÉTRÉ", UserName = "simon", Password = "1234", UserRole = "Admin" },
-            new User { FullName = "Tanguy ABDOULVAID", UserName = "tanguy", Password = "1234", UserRole = "User" }
+            new User { UserName = "simon", Password = "1234", UserRole = "Admin" },
+            new User { UserName = "tanguy", Password = "1234", UserRole = "User" }
         };
-        public LoginController(IConfiguration config)
+        public LoginController(IConfiguration config, VintedDBContext dbContext)
         {
             _config = config;
+            _dbContext = dbContext;
+            foreach (Client client in _dbContext.Clients)
+            {
+                appUsers.Add(new User {  UserName = client.Pseudo, Password = client.MotDePasse, UserRole = "User" });
+            }
         }
 
         [HttpPost]
@@ -43,7 +51,7 @@ namespace API_Vinted.Controllers
         }
         private User AuthenticateUser(User user)
         {
-            return appUsers.SingleOrDefault(x => x.UserName.ToUpper() == user.UserName.ToUpper() && x.Password == user.Password);
+            return appUsers.SingleOrDefault(x => x.UserName.ToUpper() == user.UserName.ToUpper() && PasswordManager.VerifyPassword(user.Password, x.Password));
         }
 
         private string GenerateJwtToken(User userInfo)
@@ -54,7 +62,7 @@ namespace API_Vinted.Controllers
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, userInfo.UserName),
-                new Claim("fullName", userInfo.FullName.ToString()),
+                new Claim("userName", userInfo.UserName.ToString()),
                 new Claim("role",userInfo.UserRole),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };

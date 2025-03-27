@@ -8,10 +8,10 @@ namespace API_Vinted.Models.EntityFramework
     {
 
         [InverseProperty(nameof(Client.AdresseLivraison))]
-        public virtual ICollection<Client> ClientAdresseLivraison { get; set; } = null!;
+        public virtual ICollection<Client>? ClientAdresseLivraison { get; set; } = null!;
         
         [InverseProperty(nameof(Client.AdresseFacturation))]
-        public virtual ICollection<Client> ClientAdresseFacturation { get; set; } = null!;
+        public virtual ICollection<Client>? ClientAdresseFacturation { get; set; } = null!;
 
 
         [Key]
@@ -36,6 +36,6 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDVille))]
         [InverseProperty(nameof(Ville.Adresses))]
-        public virtual Ville Ville { get; set; } = null!;
+        public virtual Ville? Ville { get; set; } = null!;
     }
 }

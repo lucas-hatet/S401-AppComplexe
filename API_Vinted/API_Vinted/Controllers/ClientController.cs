@@ -1,6 +1,8 @@
-﻿using API_Vinted.Models.DataManage;
+﻿using API_Vinted.Models;
+using API_Vinted.Models.DataManage;
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
+using BCrypt.Net;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_Vinted.Controllers
@@ -10,10 +12,13 @@ namespace API_Vinted.Controllers
     public class ClientController : ControllerBase
     {
         private readonly IDataRepository<Client> _repository;
+        private readonly AdresseManager _repositoryAdresse;
 
-        public ClientController(IDataRepository<Client> repository)
+
+        public ClientController(IDataRepository<Client> repository, AdresseManager repositoryAdresse)
         {
             _repository = repository;
+            _repositoryAdresse = repositoryAdresse;
         }
 
         [HttpGet]
@@ -38,6 +43,8 @@ namespace API_Vinted.Controllers
             {
                 return BadRequest(ModelState);
             }
+            entity.MotDePasse = PasswordManager.HashPassword(entity.MotDePasse);
+            await _repositoryAdresse.AddAsync(entity.AdresseLivraison);
             await _repository.AddAsync(entity);
             return CreatedAtAction("GetByIdAsync", new { id = entity.IDClient }, entity);
         }
