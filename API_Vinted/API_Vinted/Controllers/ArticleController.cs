@@ -27,6 +27,7 @@ namespace API_Vinted.Controllers
         }
 
         [HttpGet("{id}")]
+        [ActionName("GetByIdAsync")]
         public async Task<ActionResult<Article>> GetByIdAsync(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
