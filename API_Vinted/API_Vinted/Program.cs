@@ -29,7 +29,10 @@ builder.Services.AddScoped<DataManager<Client>>();
 builder.Services.AddScoped<DataManager<Categorie>>();
 builder.Services.AddScoped<ArticleManager>();
 builder.Services.AddScoped<VilleManager>();
-
+builder.Services.AddScoped<LangueManager>();
+builder.Services.AddScoped<PhotoManager>();
+builder.Services.AddScoped<AdresseManager>();
+builder.Services.AddScoped<SexeManager>();
 builder.Services.AddScoped<CategorieManager>();
 builder.Services.AddScoped<DataManager<Caracteristique>>();
 builder.Services.AddScoped<DataManager<Couleur>>();

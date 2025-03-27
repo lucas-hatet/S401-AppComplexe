@@ -2,48 +2,46 @@
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
 using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol.Core.Types;
 
 namespace API_Vinted.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ClientController : ControllerBase
+    public class SexeController : ControllerBase
     {
-        private readonly IDataRepository<Client> _repository;
+        private readonly SexeManager _repository;
 
-        public ClientController(IDataRepository<Client> repository)
+        public SexeController(SexeManager repository)
         {
             _repository = repository;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Client>>> GetAllAsync()
+        public async Task<ActionResult<IEnumerable<Sexe>>> GetAllAsync()
         {
             return await _repository.GetAllAsync();
+
         }
 
         [HttpGet("{id}")]
-        [ActionName("GetByIdAsync")]
-        public async Task<ActionResult<Client>> GetByIdAsync(int id)
+        public async Task<ActionResult<Sexe>> GetByIdAsync(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
             if (entity == null) return NotFound();
             return Ok(entity);
         }
 
+
         [HttpPost]
-        public async Task<ActionResult<Client>> AddAsync([FromBody] Client entity)
+        public async Task<ActionResult> AddAsync([FromBody] Sexe entity)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
             await _repository.AddAsync(entity);
-            return CreatedAtAction("GetByIdAsync", new { id = entity.IDClient }, entity);
+            return CreatedAtAction(nameof(GetByIdAsync), new { id = 1 /* Mettre l'ID de l'entité ici */ }, entity);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateAsync(int id, [FromBody] Client entity)
+        public async Task<ActionResult> UpdateAsync(int id, [FromBody] Sexe entity)
         {
             var entityToUpdate = await _repository.GetByIdAsync(id);
             if (entityToUpdate == null) return NotFound();
