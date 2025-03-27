@@ -22,9 +22,9 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDCaracteristique))]
         [InverseProperty(nameof(Models.EntityFramework.Caracteristique.Valeurs))]
-        public virtual Caracteristique Caracteristique { get; set; } = null!;
+        public virtual Caracteristique? Caracteristique { get; set; } = null!;
 
         [InverseProperty(nameof(CaracteristiqueArticle.Valeur))]
-        public virtual ICollection<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
+        public virtual ICollection<CaracteristiqueArticle>? CaracteristiquesArticle { get; set; } = null!;
     }
 }

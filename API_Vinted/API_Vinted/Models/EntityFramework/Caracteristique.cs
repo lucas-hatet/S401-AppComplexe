@@ -15,12 +15,12 @@ namespace API_Vinted.Models.EntityFramework
         public string NomCaracteristique { get; set; } = null!;
 
         [InverseProperty(nameof(Valeur.Caracteristique))]
-        public virtual ICollection<Valeur> Valeurs { get; set; } = null!;
+        public virtual ICollection<Valeur>? Valeurs { get; set; } = null!;
 
         [InverseProperty(nameof(CaracteristiqueArticle.Caracteristique))]
-        public virtual ICollection<CaracteristiqueArticle> CaracteristiquesArticle { get; set; } = null!;
+        public virtual ICollection<CaracteristiqueArticle>? CaracteristiquesArticle { get; set; } = null!;
 
         [InverseProperty(nameof(CaracteristiqueCategorie.Caracteristique))]
-        public virtual ICollection<CaracteristiqueCategorie> CaracteristiquesCategorie { get; set; } = null!;
+        public virtual ICollection<CaracteristiqueCategorie>? CaracteristiquesCategorie { get; set; } = null!;
     }
 }

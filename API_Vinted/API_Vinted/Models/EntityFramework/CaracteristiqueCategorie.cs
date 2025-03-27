@@ -18,10 +18,10 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDCategorie))]
         [InverseProperty(nameof(Models.EntityFramework.Categorie.CaracteristiquesCategorie))]
-        public virtual Categorie Categorie { get; set; } = null!;
+        public virtual Categorie? Categorie { get; set; } = null!;
 
         [ForeignKey(nameof(IDCaracteristique))]
         [InverseProperty(nameof(Models.EntityFramework.Caracteristique.CaracteristiquesCategorie))]
-        public virtual Caracteristique Caracteristique { get; set; } = null!;
+        public virtual Caracteristique? Caracteristique { get; set; } = null!;
     }
 }
