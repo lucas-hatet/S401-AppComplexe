@@ -28,6 +28,8 @@ builder.Services.AddScoped<DataManager<Article>>();
 builder.Services.AddScoped<DataManager<Client>>();
 builder.Services.AddScoped<DataManager<Categorie>>();
 builder.Services.AddScoped<ArticleManager>();
+builder.Services.AddScoped<VilleManager>();
+
 builder.Services.AddScoped<CategorieManager>();
 builder.Services.AddScoped<DataManager<Caracteristique>>();
 builder.Services.AddScoped<DataManager<Couleur>>();
@@ -50,6 +52,7 @@ builder.Services.AddCors(options =>
                       policy =>
                       {
                           policy.AllowAnyOrigin();
+                          policy.AllowAnyHeader();
                       });
 });
 

@@ -68,6 +68,8 @@ namespace API_Vinted.Models.EntityFramework
         public DbSet<Caracteristique> Caracteristiques { get; set; }
         public DbSet<Couleur> Couleurs { get; set; }
         public DbSet<FormatColis> FormatColis { get; set; }
+        public DbSet<Ville> Villes { get; set; }
+
 
 
 
