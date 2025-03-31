@@ -28,7 +28,7 @@ namespace API_Vinted.Controllers
             _dbContext = dbContext;
             foreach (Client client in _dbContext.Clients)
             {
-                appUsers.Add(new User {  UserName = client.Pseudo, Password = client.MotDePasse, UserRole = "User" });
+                appUsers.Add(new User {  UserName = client.Pseudo, Password = client.MotDePasse, UserRole = "User" ,IDClient = client.IDClient});
             }
         }
 

@@ -6,5 +6,7 @@
         public string? FullName { get; set; }
         public string Password { get; set; }
         public string? UserRole { get; set; }
+        public int? IDClient { get; set; }
+
     }
 }
