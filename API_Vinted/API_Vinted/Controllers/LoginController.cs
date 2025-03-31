@@ -17,7 +17,7 @@ namespace API_Vinted.Controllers
         private readonly IConfiguration _config;
         private PasswordManager passwordManager;
         private VintedDBContext _dbContext;
-        private List<User> appUsers = new List<User>
+        private static List<User> appUsers = new List<User>
         {
             new User { UserName = "simon", Password = "1234", UserRole = "Admin" },
             new User { UserName = "tanguy", Password = "1234", UserRole = "User" }
@@ -51,7 +51,7 @@ namespace API_Vinted.Controllers
         }
         private User AuthenticateUser(User user)
         {
-            return appUsers.SingleOrDefault(x => x.UserName.ToUpper() == user.UserName.ToUpper() && PasswordManager.VerifyPassword(user.Password, x.Password));
+            return appUsers.FirstOrDefault(x => x.UserName.ToUpper() == user.UserName.ToUpper() && PasswordManager.VerifyPassword(user.Password, x.Password));
         }
 
         private string GenerateJwtToken(User userInfo)
@@ -74,6 +74,17 @@ namespace API_Vinted.Controllers
                 signingCredentials: credentials
             );
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public IActionResult AddUserByClient(Client client)
+        {
+            try
+            {
+                appUsers.Add(new User { UserName = client.Pseudo, Password = client.MotDePasse, UserRole = "User", IDClient = client.IDClient });
+                return NoContent();
+            } catch (Exception ex) { return BadRequest(); }
         }
     }
 }

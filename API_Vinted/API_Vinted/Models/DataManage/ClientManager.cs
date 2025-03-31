@@ -31,7 +31,7 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<Client>> GetByIdAsync(int id)
         {
-            return await _context.Clients.Include(c => c.AdresseFacturation.Ville).Include(c => c.AvisSur).ThenInclude(a => a.Acheteur).Include(c => c.Articles).ThenInclude(a => a.Marque).Include(c => c.Articles).ThenInclude(a => a.Photos).ThenInclude(pa => pa.Photo).Include(c => c.Photo).FirstOrDefaultAsync(a => a.IDClient == id);
+            return await _context.Clients.Include(c => c.AdresseLivraison.Ville).Include(c => c.AvisSur).ThenInclude(a => a.Acheteur).Include(c => c.Articles).ThenInclude(a => a.Marque).Include(c => c.Articles).ThenInclude(a => a.Photos).ThenInclude(pa => pa.Photo).Include(c => c.Photo).FirstOrDefaultAsync(a => a.IDClient == id);
             
         }
 

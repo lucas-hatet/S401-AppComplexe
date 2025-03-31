@@ -1,3 +1,4 @@
+using API_Vinted.Controllers;
 using API_Vinted.Models;
 using API_Vinted.Models.DataManage;
 using API_Vinted.Models.EntityFramework;
@@ -37,6 +38,7 @@ builder.Services.AddScoped<CategorieManager>();
 builder.Services.AddScoped<DataManager<Caracteristique>>();
 builder.Services.AddScoped<DataManager<Couleur>>();
 builder.Services.AddScoped<DataManager<FormatColis>>();
+builder.Services.AddScoped<LoginController>();
 builder.Services.AddScoped<IDataRepository<Marque>, MarqueManager>();
 builder.Services.AddScoped<IDataRepository<Article>, ArticleManager>();
 builder.Services.AddScoped<IDataRepository<Client>, ClientManager>();

@@ -13,12 +13,14 @@ namespace API_Vinted.Controllers
     {
         private readonly IDataRepository<Client> _repository;
         private readonly AdresseManager _repositoryAdresse;
+        private readonly LoginController _loginController;
 
 
-        public ClientController(IDataRepository<Client> repository, AdresseManager repositoryAdresse)
+        public ClientController(IDataRepository<Client> repository, AdresseManager repositoryAdresse, LoginController loginController)
         {
             _repository = repository;
             _repositoryAdresse = repositoryAdresse;
+            _loginController = loginController;
         }
 
         [HttpGet]
@@ -46,6 +48,7 @@ namespace API_Vinted.Controllers
             entity.MotDePasse = PasswordManager.HashPassword(entity.MotDePasse);
             await _repositoryAdresse.AddAsync(entity.AdresseLivraison);
             await _repository.AddAsync(entity);
+            _loginController.AddUserByClient(entity);
             return CreatedAtAction("GetByIdAsync", new { id = entity.IDClient }, entity);
         }
 
