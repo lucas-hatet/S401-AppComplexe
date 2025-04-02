@@ -74,6 +74,9 @@ namespace API_Vinted.Models.EntityFramework
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Adresse> Adresses { get; set; }
         public DbSet<CaracteristiqueArticle> CaracteristiqueArticles { get; set; }
+        public DbSet<CouleurArticle> CouleurArticles { get; set; }
+
+
 
 
 

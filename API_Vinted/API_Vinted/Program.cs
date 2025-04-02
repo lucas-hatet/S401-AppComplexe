@@ -41,6 +41,7 @@ builder.Services.AddScoped<DataManager<FormatColis>>();
 builder.Services.AddScoped<LoginController>();
 builder.Services.AddScoped<DataManager<CaracteristiqueArticle>>();
 builder.Services.AddScoped<CaracteristiqueArticleManager>();
+builder.Services.AddScoped<CouleurArticleManager>();
 builder.Services.AddScoped<IDataRepository<Marque>, MarqueManager>();
 builder.Services.AddScoped<IDataRepository<Article>, ArticleManager>();
 builder.Services.AddScoped<IDataRepository<Client>, ClientManager>();
@@ -49,6 +50,7 @@ builder.Services.AddScoped<IDataRepository<Caracteristique>, CaracteristiqueMana
 builder.Services.AddScoped<IDataRepository<FormatColis>, FormatColisManager>();
 builder.Services.AddScoped<IDataRepository<Couleur>, CouleurManager>();
 builder.Services.AddScoped<IDataRepository<CaracteristiqueArticle>, CaracteristiqueArticleManager>();
+builder.Services.AddScoped<IDataRepository<CouleurArticle>, CouleurArticleManager>();
 
 
 
