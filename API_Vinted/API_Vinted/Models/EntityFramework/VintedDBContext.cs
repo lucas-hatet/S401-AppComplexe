@@ -73,6 +73,7 @@ namespace API_Vinted.Models.EntityFramework
         public DbSet<Langue> Langues { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Adresse> Adresses { get; set; }
+        public DbSet<CaracteristiqueArticle> CaracteristiqueArticles { get; set; }
 
 
 
