@@ -45,11 +45,15 @@ namespace API_Vinted.Models.EntityFramework
 
             modelBuilder.Entity<Achat>()
                .Property(b => b.DateAchat)
-               .HasDefaultValueSql("CURRENT_DATE");
+               .HasDefaultValueSql("NOW()");
 
             modelBuilder.Entity<Article>()
                .Property(b => b.DateAjout)
-               .HasDefaultValueSql("CURRENT_DATE");
+               .HasDefaultValueSql("NOW()");
+
+            modelBuilder.Entity<Message>()
+               .Property(m => m.DateMessage)
+               .HasDefaultValueSql("NOW()");
 
             modelBuilder.Entity<Article>()
                .Property(b => b.NBVue)
