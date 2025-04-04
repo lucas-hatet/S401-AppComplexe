@@ -28,14 +28,14 @@ namespace API_Vinted.Models.EntityFramework
 
         [ForeignKey(nameof(IDExpediteur))]
         [InverseProperty(nameof(Client.MessagesEnvoyes))]
-        public virtual Client Expediteur { get; set; } = null!;
+        public virtual Client? Expediteur { get; set; } = null!;
 
         [ForeignKey(nameof(IDDestinataire))]
         [InverseProperty(nameof(Client.MessagesRecus))]
-        public virtual Client Destinataire { get; set; } = null!;
+        public virtual Client? Destinataire { get; set; } = null!;
 
         [ForeignKey(nameof(IDArticle))]
         [InverseProperty(nameof(Models.EntityFramework.Article.Messages))]
-        public virtual Article Article { get; set; } = null!;
+        public virtual Article? Article { get; set; } = null!;
     }
 }

@@ -27,9 +27,9 @@ namespace API_Vinted.Models.DataManage
             return await _dbContext.Messages.ToListAsync();
         }
 
-        public async Task<ActionResult<Message>> GetByIdAsync(int id)
+        public async Task<ActionResult<IEnumerable<Message>>> GetByIdAsync(int idexpediteur, int idreceveur, int idarticle)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Messages.Where(m => m.IDExpediteur == idexpediteur && m.IDDestinataire == idreceveur && m.IDArticle == idarticle).ToListAsync();
         }
 
         public Task UpdateAsync(Message entityToUpdate, Message entity)
