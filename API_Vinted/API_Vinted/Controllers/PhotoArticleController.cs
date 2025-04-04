@@ -1,31 +1,33 @@
 ﻿using API_Vinted.Models.DataManage;
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol.Core.Types;
+using static API_Vinted.Controllers.PhotoController;
 
 namespace API_Vinted.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class PhotoController : ControllerBase
+    public class PhotoArticleController : ControllerBase
     {
-        private readonly PhotoManager _repository;
+        private readonly PhotoArticleManager _repository;
 
-        public PhotoController(PhotoManager repository)
+        public PhotoArticleController(PhotoArticleManager repository)
         {
             _repository = repository;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Photo>>> GetAllAsync()
+        public async Task<ActionResult<IEnumerable<PhotoArticle>>> GetAllAsync()
         {
             return await _repository.GetAllAsync();
 
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Photo>> GetByIdAsync(int id)
+        public async Task<ActionResult<PhotoArticle>> GetByIdAsync(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
             if (entity == null) return NotFound();
@@ -34,14 +36,23 @@ namespace API_Vinted.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult> AddAsync([FromBody] Photo entity)
+        public async Task<ActionResult> AddAsync([FromBody] PhotoArticleCreateDto createDto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var entity = new PhotoArticle
+            {
+                IDPhoto = createDto.IDPhoto,
+                IDArticle = createDto.IDArticle
+            };
             await _repository.AddAsync(entity);
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = 1 /* Mettre l'ID de l'entité ici */ }, entity);
+            return Created($"/api/PhotoArticle/{entity.IDPhoto}", entity);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateAsync(int id, [FromBody] Photo entity)
+        public async Task<ActionResult> UpdateAsync(int id, [FromBody] PhotoArticle entity)
         {
             var entityToUpdate = await _repository.GetByIdAsync(id);
             if (entityToUpdate == null) return NotFound();
@@ -57,6 +68,12 @@ namespace API_Vinted.Controllers
 
             await _repository.DeleteAsync(entity.Value);
             return NoContent();
+        }
+
+        public class PhotoArticleCreateDto
+        {
+            public int IDPhoto { get; set; }
+            public int IDArticle { get; set; }
         }
     }
 }
