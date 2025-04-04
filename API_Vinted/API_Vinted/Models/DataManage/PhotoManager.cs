@@ -1,24 +1,29 @@
 ﻿using API_Vinted.Models.EntityFramework;
+using API_Vinted.Models.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_Vinted.Models.DataManage
 {
-    public class PhotoManager
+    public class PhotoManager : IDataRepository<Photo>
     {
-        private VintedDBContext _dbContext;
+        private readonly VintedDBContext _dbContext;
+
         public PhotoManager(VintedDBContext dbContext)
         {
             _dbContext = dbContext;
         }
-        public Task AddAsync(Photo entity)
+
+        public async Task AddAsync(Photo entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Photos.Add(entity);
+            await _dbContext.SaveChangesAsync();
         }
 
-        public Task DeleteAsync(Photo entity)
+        public async Task DeleteAsync(Photo entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Photos.Remove(entity);
+            await _dbContext.SaveChangesAsync();
         }
 
         public async Task<ActionResult<IEnumerable<Photo>>> GetAllAsync()
@@ -28,12 +33,15 @@ namespace API_Vinted.Models.DataManage
 
         public async Task<ActionResult<Photo>> GetByIdAsync(int id)
         {
-            return await _dbContext.Photos.FirstOrDefaultAsync(a => a.IDPhoto == id);
+
+            return await _dbContext.Photos.FirstOrDefaultAsync(m => m.IDPhoto == id);
         }
 
-        public Task UpdateAsync(Photo entityToUpdate, Photo entity)
+        public async Task UpdateAsync(Photo existingEntity, Photo updatedEntity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(existingEntity).CurrentValues.SetValues(updatedEntity);
+            await _dbContext.SaveChangesAsync();
         }
+
     }
 }
