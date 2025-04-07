@@ -36,7 +36,7 @@ namespace API_Vinted.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("Date")
                         .HasColumnName("dateachat")
-                        .HasDefaultValueSql("CURRENT_DATE");
+                        .HasDefaultValueSql("NOW()");
 
                     b.Property<int>("IDClient")
                         .ValueGeneratedOnAdd()
@@ -115,7 +115,7 @@ namespace API_Vinted.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("Date")
                         .HasColumnName("dateajout")
-                        .HasDefaultValueSql("CURRENT_DATE");
+                        .HasDefaultValueSql("NOW()");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -733,9 +733,11 @@ namespace API_Vinted.Migrations
                         .HasColumnType("text")
                         .HasColumnName("message");
 
-                    b.Property<DateTime>("DateMessage")
+                    b.Property<DateTime?>("DateMessage")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone")
-                        .HasColumnName("datemessage");
+                        .HasColumnName("datemessage")
+                        .HasDefaultValueSql("NOW()");
 
                     b.Property<double?>("PrixOffre")
                         .HasColumnType("double precision")
@@ -1460,7 +1462,15 @@ namespace API_Vinted.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("API_Vinted.Models.EntityFramework.Photo", "Photo")
+                        .WithMany("PhotoArticles")
+                        .HasForeignKey("IDPhoto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Article");
+
+                    b.Navigation("Photo");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.PhotoRetour", b =>
@@ -1657,6 +1667,8 @@ namespace API_Vinted.Migrations
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.Photo", b =>
                 {
                     b.Navigation("Clients");
+
+                    b.Navigation("PhotoArticles");
                 });
 
             modelBuilder.Entity("API_Vinted.Models.EntityFramework.PointRelais", b =>

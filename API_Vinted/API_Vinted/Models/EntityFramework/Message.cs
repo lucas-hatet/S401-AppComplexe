@@ -21,7 +21,7 @@ namespace API_Vinted.Models.EntityFramework
         public string ContenuMessage { get; set; } = null!;
 
         [Column("datemessage")]
-        public DateTime DateMessage { get; set; }
+        public DateTime? DateMessage { get; set; }
 
         [Column("prixoffre")]
         public double? PrixOffre { get; set; }

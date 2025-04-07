@@ -37,7 +37,7 @@ namespace API_Vinted.Controllers
         public async Task<ActionResult> AddAsync([FromBody] Message entity)
         {
             await _repository.AddAsync(entity);
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = 1 /* Mettre l'ID de l'entité ici */ }, entity);
+            return Ok();
         }
 
         [HttpPut("{id}")]

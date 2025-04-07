@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace API_Vinted.Migrations
 {
     /// <inheritdoc />
-    public partial class CreationBDVinted : Migration
+    public partial class VintedMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -388,7 +388,7 @@ namespace API_Vinted.Migrations
                     idclient = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:IdentitySequenceOptions", "'1', '1', '', '', 'False', '1'")
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    dateachat = table.Column<DateTime>(type: "Date", nullable: true, defaultValueSql: "CURRENT_DATE")
+                    dateachat = table.Column<DateTime>(type: "Date", nullable: true, defaultValueSql: "NOW()")
                 },
                 constraints: table =>
                 {
@@ -540,7 +540,7 @@ namespace API_Vinted.Migrations
                     idformat = table.Column<int>(type: "integer", nullable: false),
                     idmarque = table.Column<int>(type: "integer", nullable: false),
                     nomarticle = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
-                    dateajout = table.Column<DateTime>(type: "Date", nullable: false, defaultValueSql: "CURRENT_DATE"),
+                    dateajout = table.Column<DateTime>(type: "Date", nullable: false, defaultValueSql: "NOW()"),
                     description = table.Column<string>(type: "text", nullable: false),
                     prix = table.Column<float>(type: "numeric(18,2)", nullable: false),
                     nbvue = table.Column<int>(type: "integer", nullable: false, defaultValue: 0)
@@ -852,7 +852,7 @@ namespace API_Vinted.Migrations
                     iddestinataire = table.Column<int>(type: "integer", nullable: false),
                     idarticle = table.Column<int>(type: "integer", nullable: false),
                     message = table.Column<string>(type: "text", nullable: false),
-                    datemessage = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    datemessage = table.Column<DateTime>(type: "timestamp with time zone", nullable: false, defaultValueSql: "NOW()"),
                     prixoffre = table.Column<double>(type: "double precision", nullable: true)
                 },
                 constraints: table =>
@@ -900,6 +900,13 @@ namespace API_Vinted.Migrations
                         principalSchema: "public",
                         principalTable: "article",
                         principalColumn: "idarticle",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_photo_article_photo_idphoto",
+                        column: x => x.idphoto,
+                        principalSchema: "public",
+                        principalTable: "photo",
+                        principalColumn: "idphoto",
                         onDelete: ReferentialAction.Cascade);
                 });
 
