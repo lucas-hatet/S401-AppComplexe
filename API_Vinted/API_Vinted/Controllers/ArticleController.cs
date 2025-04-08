@@ -51,8 +51,27 @@ namespace API_Vinted.Controllers
                 return BadRequest(ModelState);
             }
             await _repository.AddAsync(entity);
-            return CreatedAtAction("GetByIdAsync", new { id = entity.IDArticle }, entity); 
+
+            var articleDto = new ArticleDto
+            {
+                IDArticle = entity.IDArticle,
+                IDVendeur = entity.IDVendeur,
+                NumTransaction = entity.NumTransaction,
+                IDCategorie = entity.IDCategorie,
+                IDModePaiement = entity.IDModePaiement,
+                IDFormat = entity.IDFormat,
+                IDMarque = entity.IDMarque,
+                NomArticle = entity.NomArticle,
+                DateAjout = entity.DateAjout,
+                Description = entity.Description,
+                Prix = entity.Prix,
+                NBVue = entity.NBVue
+            };
+
+            return CreatedAtAction("GetByIdAsync", new { id = entity.IDArticle }, articleDto);
         }
+
+
 
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateAsync(int id, [FromBody] Article entity)
@@ -71,6 +90,22 @@ namespace API_Vinted.Controllers
 
             await _repository.DeleteAsync(entity.Value);
             return NoContent();
+        }
+
+        public class ArticleDto
+        {
+            public int IDArticle { get; set; }
+            public int IDVendeur { get; set; }
+            public int? NumTransaction { get; set; }
+            public int IDCategorie { get; set; }
+            public int IDModePaiement { get; set; }
+            public int IDFormat { get; set; }
+            public int IDMarque { get; set; }
+            public string NomArticle { get; set; } = null!;
+            public DateTime DateAjout { get; set; }
+            public string Description { get; set; } = null!;
+            public float Prix { get; set; }
+            public int NBVue { get; set; }
         }
     }
 }
