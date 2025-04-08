@@ -40,11 +40,11 @@ namespace API_Vinted.Controllers.Tests
         [TestMethod()]
         public async Task GetByIdAsyncTest()
         {
-            int id = 1;
-            Caracteristique caracteristiqueDB = _context.Caracteristiques.FirstOrDefault(a => a.IDCaracteristique == id);
-            var caracteristiqueController = await _controller.GetByIdAsync(id);
+           int id = 1;
+           Caracteristique caracteristiqueDB = _context.Caracteristiques.FirstOrDefault(a => a.IDCaracteristique == id);
+           var caracteristiqueController = await _controller.GetByIdAsync(id);
 
-            Assert.AreEqual(caracteristiqueController.Value, caracteristiqueDB);
+           Assert.AreEqual(caracteristiqueController.Value, caracteristiqueDB);
 
         }
 
