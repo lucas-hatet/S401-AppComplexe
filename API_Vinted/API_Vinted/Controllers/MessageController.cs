@@ -32,6 +32,15 @@ namespace API_Vinted.Controllers
             return Ok(entity);
         }
 
+        [HttpGet]
+        [Route("[action]/{idexpediteur}")]
+        public async Task<ActionResult<Message>> GetConversationByIdAsync(int idexpediteur)
+        {
+            var entity = await _repository.GetConversationByIdAsync(idexpediteur);
+            if (entity == null) return NotFound();
+            return Ok(entity);
+        }
+
 
         [HttpPost]
         public async Task<ActionResult> AddAsync([FromBody] Message entity)

@@ -32,6 +32,24 @@ namespace API_Vinted.Models.DataManage
             return await _dbContext.Messages.Where(m => m.IDExpediteur == idexpediteur && m.IDDestinataire == idreceveur && m.IDArticle == idarticle).ToListAsync();
         }
 
+        public async Task<ActionResult<IEnumerable<int>>> GetConversationByIdAsync(int idexpediteur)
+        {
+            var result = await _dbContext.Messages.Where(m => m.IDExpediteur == idexpediteur || m.IDDestinataire == idexpediteur).ToListAsync();
+            List<int> idConversation = new List<int>();
+            foreach(var message in result)
+            {
+                if (!idConversation.Contains(message.IDDestinataire) && message.IDDestinataire != idexpediteur)
+                {
+                    idConversation.Add(message.IDDestinataire);
+                }
+                if (!idConversation.Contains(message.IDExpediteur) && message.IDExpediteur != idexpediteur)
+                {
+                    idConversation.Add(message.IDExpediteur);
+                }
+            }
+            return idConversation;
+        }
+
         public Task UpdateAsync(Message entityToUpdate, Message entity)
         {
             throw new NotImplementedException();
