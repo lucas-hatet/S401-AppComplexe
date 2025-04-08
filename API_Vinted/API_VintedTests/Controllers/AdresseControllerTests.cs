@@ -43,10 +43,18 @@ namespace API_Vinted.Controllers.Tests
             Adresse adresseDB = _context.Adresses.FirstOrDefault(a => a.IDAdresse == id);
             var adresseController =   await _controller.GetByIdAsync(id);
 
-            Assert.IsInstanceOfType(adresseController, typeof(OkObjectResult));
-            Assert.IsInstanceOfType(adresseController.Value, typeof(Adresse));
 
-            Assert.AreEqual(adresseController.Value, adresseDB);
+
+            Assert.IsInstanceOfType(adresseController, typeof(ActionResult<Adresse>));
+            Assert.IsInstanceOfType(adresseController.Result, typeof(OkObjectResult));
+
+            var okResult = (OkObjectResult)adresseController.Result;
+            Assert.IsInstanceOfType(okResult.Value, typeof(ActionResult<Adresse>));
+
+            var actionResult = (ActionResult<Adresse>)okResult.Value;
+            Assert.IsInstanceOfType(actionResult.Value, typeof(Adresse));
+
+            Assert.AreEqual(actionResult.Value, adresseDB);
 
         }
 
