@@ -3,6 +3,7 @@ using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol.Core.Types;
+using System.Runtime.CompilerServices;
 
 namespace API_Vinted.Controllers
 {
@@ -34,7 +35,7 @@ namespace API_Vinted.Controllers
 
         [HttpGet]
         [Route("[action]/{idexpediteur}")]
-        public async Task<ActionResult<Message>> GetConversationByIdAsync(int idexpediteur)
+        public async Task<ActionResult<IEnumerable<(int,int)>>> GetConversationByIdAsync(int idexpediteur)
         {
             var entity = await _repository.GetConversationByIdAsync(idexpediteur);
             if (entity == null) return NotFound();

@@ -32,19 +32,21 @@ namespace API_Vinted.Models.DataManage
             return await _dbContext.Messages.Where(m => m.IDExpediteur == idexpediteur && m.IDDestinataire == idreceveur && m.IDArticle == idarticle).ToListAsync();
         }
 
-        public async Task<ActionResult<IEnumerable<int>>> GetConversationByIdAsync(int idexpediteur)
+        public async Task<IEnumerable<(int,int)>> GetConversationByIdAsync(int idexpediteur)
         {
             var result = await _dbContext.Messages.Where(m => m.IDExpediteur == idexpediteur || m.IDDestinataire == idexpediteur).ToListAsync();
-            List<int> idConversation = new List<int>();
+            List<(int, int)> idConversation = new List<(int,int)>();
             foreach(var message in result)
             {
-                if (!idConversation.Contains(message.IDDestinataire) && message.IDDestinataire != idexpediteur)
+                //Récup les messages envoyés
+                if (!idConversation.Contains( (message.IDDestinataire, message.IDArticle)) && message.IDDestinataire != idexpediteur)
                 {
-                    idConversation.Add(message.IDDestinataire);
+                    idConversation.Add((message.IDDestinataire, message.IDArticle));
                 }
-                if (!idConversation.Contains(message.IDExpediteur) && message.IDExpediteur != idexpediteur)
+                //récup les messages reçus
+                if (!idConversation.Contains((message.IDExpediteur, message.IDArticle)) && message.IDExpediteur != idexpediteur)
                 {
-                    idConversation.Add(message.IDExpediteur);
+                    idConversation.Add((message.IDExpediteur, message.IDArticle));
                 }
             }
             return idConversation;
