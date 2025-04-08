@@ -50,12 +50,12 @@ namespace API_Vinted.Controllers.Tests
 
             var okResult = (OkObjectResult)articleController.Result;
 
+            Assert.IsInstanceOfType(okResult.Value, typeof(ActionResult<Article>));
 
-            var article = okResult.Value as Article;
+            var actionResult = (ActionResult<Article>)okResult.Value;
 
-            Assert.IsNotNull(article);
+            Assert.AreEqual(actionResult.Value, articleDB);
 
-            Assert.AreEqual(article, articleDB);
         }
 
         [TestMethod()]

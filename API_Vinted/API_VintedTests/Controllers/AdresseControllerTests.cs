@@ -34,6 +34,7 @@ namespace API_Vinted.Controllers.Tests
         [TestMethod()]
         public void GetAllAsyncTest()
         {
+            
         }
 
         [TestMethod()]

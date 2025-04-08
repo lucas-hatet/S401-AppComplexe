@@ -1,6 +1,6 @@
 ﻿namespace API_Vinted.Models.EntityFramwork
 {
-    public partial class CaracteristiquePart
+    public partial class Caracteristique
     {
     }
 }
