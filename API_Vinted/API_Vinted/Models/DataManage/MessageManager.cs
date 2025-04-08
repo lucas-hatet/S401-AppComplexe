@@ -1,4 +1,5 @@
-﻿using API_Vinted.Models.EntityFramework;
+﻿using API_Vinted.Models.DTO;
+using API_Vinted.Models.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,21 +33,21 @@ namespace API_Vinted.Models.DataManage
             return await _dbContext.Messages.Where(m => m.IDExpediteur == idexpediteur && m.IDDestinataire == idreceveur && m.IDArticle == idarticle).ToListAsync();
         }
 
-        public async Task<IEnumerable<(int,int)>> GetConversationByIdAsync(int idexpediteur)
+        public async Task<IEnumerable<Conversation>> GetConversationByIdAsync(int idexpediteur)
         {
             var result = await _dbContext.Messages.Where(m => m.IDExpediteur == idexpediteur || m.IDDestinataire == idexpediteur).ToListAsync();
-            List<(int, int)> idConversation = new List<(int,int)>();
+            List<Conversation> idConversation = new List<Conversation>();
             foreach(var message in result)
             {
                 //Récup les messages envoyés
-                if (!idConversation.Contains( (message.IDDestinataire, message.IDArticle)) && message.IDDestinataire != idexpediteur)
+                if (!idConversation.Contains( new Conversation(message.IDDestinataire, message.IDArticle)) && message.IDDestinataire != idexpediteur)
                 {
-                    idConversation.Add((message.IDDestinataire, message.IDArticle));
+                    idConversation.Add(new Conversation(message.IDDestinataire, message.IDArticle));
                 }
                 //récup les messages reçus
-                if (!idConversation.Contains((message.IDExpediteur, message.IDArticle)) && message.IDExpediteur != idexpediteur)
+                if (!idConversation.Contains(new Conversation(message.IDExpediteur, message.IDArticle)) && message.IDExpediteur != idexpediteur)
                 {
-                    idConversation.Add((message.IDExpediteur, message.IDArticle));
+                    idConversation.Add(new Conversation(message.IDExpediteur, message.IDArticle));
                 }
             }
             return idConversation;

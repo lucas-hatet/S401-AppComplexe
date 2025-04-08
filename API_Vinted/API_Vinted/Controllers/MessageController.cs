@@ -1,4 +1,5 @@
 ﻿using API_Vinted.Models.DataManage;
+using API_Vinted.Models.DTO;
 using API_Vinted.Models.EntityFramework;
 using API_Vinted.Models.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -35,7 +36,7 @@ namespace API_Vinted.Controllers
 
         [HttpGet]
         [Route("[action]/{idexpediteur}")]
-        public async Task<ActionResult<IEnumerable<(int,int)>>> GetConversationByIdAsync(int idexpediteur)
+        public async Task<ActionResult<IEnumerable<Conversation>>> GetConversationByIdAsync(int idexpediteur)
         {
             var entity = await _repository.GetConversationByIdAsync(idexpediteur);
             if (entity == null) return NotFound();
