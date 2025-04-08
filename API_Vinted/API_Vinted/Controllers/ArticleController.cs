@@ -23,7 +23,6 @@ namespace API_Vinted.Controllers
         public async Task<ActionResult<IEnumerable<Article>>> GetAllAsync()
         {
             return await _repository.GetAllAsync();
-            
         }
 
         [HttpGet("{id}")]
@@ -44,6 +43,7 @@ namespace API_Vinted.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = Policies.User)]
         public async Task<ActionResult<Article>> AddAsync([FromBody] Article entity)
         {
             if (!ModelState.IsValid)
