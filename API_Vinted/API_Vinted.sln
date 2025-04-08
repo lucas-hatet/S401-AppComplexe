@@ -5,7 +5,12 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_Vinted", "API_Vinted\API_Vinted.csproj", "{E65AEAC6-672F-4AFA-BC49-4A59F75C0C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_VintedTests", "API_VintedTests\API_VintedTests.csproj", "{FC800A16-FB5A-4071-A1FD-CB79F225AEF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_VintedTests", "API_VintedTests\API_VintedTests.csproj", "{FC800A16-FB5A-4071-A1FD-CB79F225AEF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{91718FE0-DCFB-40BC-A973-F0E1392D9F3B}"
+	ProjectSection(SolutionItems) = preProject
+		Graph.dgml = Graph.dgml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
