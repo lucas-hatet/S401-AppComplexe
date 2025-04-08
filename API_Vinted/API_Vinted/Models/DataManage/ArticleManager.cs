@@ -19,9 +19,20 @@ namespace API_Vinted.Models.DataManage
             await _dbContext.SaveChangesAsync();
         }
 
-        public Task DeleteAsync(Article entity)
+        async public Task DeleteAsync(Article entity)
         {
-            throw new NotImplementedException();
+            var article = await _dbContext.Articles
+               .FirstOrDefaultAsync(a => a.IDArticle == entity.IDArticle);
+
+            if (article != null)
+            {
+                _dbContext.Articles.Remove(article);
+                await _dbContext.SaveChangesAsync();
+            }
+            else
+            {
+                throw new ArgumentException("Article not found");
+            }
         }
 
         public async Task<ActionResult<IEnumerable<Article>>> GetAllAsync()
